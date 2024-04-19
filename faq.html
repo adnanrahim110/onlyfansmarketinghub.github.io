@@ -50,7 +50,7 @@
             <nav class="navbar sticky navbar-expand-lg col-lg-12" id="bottomNav">
                 <div class="container-fluid">
                     <div class="mob-logo">
-                        <a class="navbar-brand" href="#"><img src="assets/images/Logo-02.png" alt="" /></a>
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/Logo-02.png" alt="" /></a>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,7 +59,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav nav-1">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Our Services</a>
@@ -69,14 +69,14 @@
                             </li>
                         </ul>
                         <div class="web-logo">
-                            <a class="navbar-brand" href="#"><img src="assets/images/Logo-02.png" alt="" /></a>
+                            <a class="navbar-brand" href="index.html"><img src="assets/images/Logo-02.png" alt="" /></a>
                         </div>
                         <ul class="navbar-nav nav-2">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Agency Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="faq.html">FAQ</a>
+                                <a class="nav-link active" aria-current="page" href="faq.html">FAQ</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
@@ -89,7 +89,7 @@
             <div class="social-box social-s" id="social">
                 <ul class="social row">
                     <li class="social-item col-4">
-                        <a class="social-link i nsta" href="#">
+                        <a class="social-link insta" href="#">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </a>
                     </li>
@@ -118,90 +118,154 @@
                                 <h1>Do You Have <span>Questions ?</span></h1>
                             </div>
                             <div class="faq-points">
-                                <h1>CSS-Only Animated Accordion</h1>
-                                <section class="accordion" id="overview">
-                                    <h1 class="title"><a href="#overview">Overview</a></h1>
-                                    <div class="content">
-                                        <div class="wrapper">
-                                            <p>
-                                                This CodePen demonstrates how we can animate the opening and closing
-                                                states of an accordion with fancy reveal animation using only CSS. This
-                                                concept is suitable for creating <strong>FAQ sections</strong>,
-                                                <strong>Table of Contents</strong>, and more.
-                                            </p>
+                                <div class="accordion" id="accordion">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
+                                                Accordion Item #1
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the third item's accordion body. Nothing more exciting happening here in
+                                                terms of content, but just filling up the space to make it look, at
+                                                least at first glance, a bit more representative of how this would look
+                                                in a real-world application.
+                                            </div>
                                         </div>
                                     </div>
-                                </section>
-
-                                <section class="accordion" id="how-does-it-work">
-                                    <h1 class="title"><a href="#how-does-it-work">How does it work?</a></h1>
-                                    <div class="content">
-                                        <div class="wrapper">
-                                            <p>
-                                                We cannot transition height or any CSS property from zero to auto. If we
-                                                want to smoothly expand a collapsed accordion, we could set a
-                                                <code>max-height</code> and transition the <code>height</code> property
-                                                to a large value when we expand the section. However,
-                                                <a href="https://css-tricks.com/using-css-transitions-auto-dimensions/#aa-there-are-two-crucial-downsides-to-this"
-                                                    target="_blank">it may not properly work</a>
-                                                if the content is larger than the <code>max-height</code>.
-                                            </p>
-                                            <p>
-                                                So, here we create a CSS grid with a grid item. Then we transition the
-                                                <code>grid-template-rows</code> property from <code>0fr</code> to
-                                                <code>1fr</code> and the grid item transitions to its content height.
-                                            </p>
-                                            <p>
-                                                I used CSS <code>clip-path</code> and <code>mix-blend-mode</code> to
-                                                animate the background and text color of the accordion. Each accordion
-                                                has two pseudo-elements. We know that <code>opacity</code>,
-                                                <code>clip-path</code> and, <code>visibility</code> are animatable CSS
-                                                properties. So when the accordion is selected using the
-                                                <code>:target</code> pseudo-class, we transition the clip-path circle
-                                                radius to 200% of the
-                                                <code>::before</code>
-                                                pseudo-element. When the accordion is not selected, we do the same with
-                                                the
-                                                <code>::after</code> but this time with a delay. This creates an
-                                                illusion as it appears to clip from inside.
-                                            </p>
-                                            <p>
-                                                Since the accordion's title is an anchor element, users can also
-                                                navigate through the items with their keyboard.
-                                            </p>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Accordion Item #2
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the second item's accordion body. Let's imagine this being filled with
+                                                some actual content.</div>
                                         </div>
                                     </div>
-                                </section>
-
-                                <section class="accordion" id="inspiration">
-                                    <h1 class="title"><a href="#inspiration">Inspiration</a></h1>
-                                    <div class="content">
-                                        <div class="wrapper">
-                                            <p>
-                                                In a recent video, Kevin showed us a way to animate height from zero to
-                                                auto value. Seeing that, I couldn't resist experimenting with the idea.
-                                                Then I came up with this CSS-only accordion component and added the
-                                                reveal animation too!
-                                            </p>
-                                            <p>
-                                                I would highly recommend watching
-                                                <a href="https://youtu.be/B_n4YONte5A" target="_blank">his video</a>,
-                                                where he beautifully explains the technique and points out how he
-                                                discovered it. Also, read
-                                                <a href="https://keithjgrant.com/posts/2023/04/transitioning-to-height-auto/"
-                                                    target="_blank">Keith J. Grant's post</a>
-                                                and
-                                                <a href="https://nemzes.net/posts/animating-height-auto/"
-                                                    target="_blank">Nelson Menezes's post</a>
-                                                on the same topic.
-                                            </p>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Accordion Item #3
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the first item's accordion body.
+                                            </div>
                                         </div>
                                     </div>
-                                </section>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                Accordion Item #3
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the third item's accordion body. Nothing more exciting happening here in
+                                                terms of content, but just filling up the space to make it look, at
+                                                least at first glance, a bit more representative of how this would look
+                                                in a real-world application.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                aria-expanded="false" aria-controls="collapseFive">
+                                                Accordion Item #3
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the third item's accordion body. Nothing more exciting happening here in
+                                                terms of content, but just filling up the space to make it look, at
+                                                least at first glance, a bit more representative of how this would look
+                                                in a real-world application.</div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                                aria-expanded="false" aria-controls="collapseSix">
+                                                Accordion Item #3
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSix" class="accordion-collapse collapse"
+                                            data-bs-parent="#accordion">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the <code>.accordion-flush</code> class. This is
+                                                the third item's accordion body. Nothing more exciting happening here in
+                                                terms of content, but just filling up the space to make it look, at
+                                                least at first glance, a bit more representative of how this would look
+                                                in a real-world application.</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5"></div>
+                    <div class="col-lg-5">
+                        <div class="faq-form">
+                            <div class="faq-formhead">
+                                <h2>can't find the <span>answers ?</span></h2>
+                            </div>
+                            <form class="contact1-form validate-form">
+                                <div class="wrap-input1 validate-input" data-validate="Name is required">
+                                    <input class="input1" type="text" name="name" placeholder="Full Name" />
+                                    <span class="shadow-input1"></span>
+                                </div>
+
+                                <div class="wrap-input1 validate-input"
+                                    data-validate="Valid email is required: ex@abc.xyz">
+                                    <input class="input1" type="text" name="email" placeholder="Email" />
+                                    <span class="shadow-input1"></span>
+                                </div>
+                                <div class="wrap-input1 validate-input"
+                                    data-validate="Valid phone number is required: ">
+                                    <input class="input1" type="text" name="phone" placeholder="Phone Number" />
+                                    <span class="shadow-input1"></span>
+                                </div>
+
+                                <div class="wrap-input1 validate-input" data-validate="Message is required">
+                                    <textarea class="input1" name="message" placeholder="Message"></textarea>
+                                    <span class="shadow-input1"></span>
+                                </div>
+
+                                <div class="container-contact1-form-btn">
+                                    <button class="form-btn">
+                                        Get started
+                                        <div class="icon">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </div>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -423,42 +487,31 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 
     <script>
+        $(document).ready(function () {
+            var $tickerWrapper = $(".ticker-wrapper");
+            var $list = $tickerWrapper.find("ul");
+            var listWidth = $list.outerWidth();
+            var $clonedList = $list.clone();
 
-        var $tickerWrapper = $(".tickerwrapper");
-        var $list = $tickerWrapper.find("ul.qbb-list");
-        var $clonedList = $list.clone();
-        var listWidth = 10;
+            $clonedList.addClass("cloned").appendTo($tickerWrapper);
 
-        $list.find("li").each(function (i) {
-            listWidth += $(this, i).outerWidth(true);
-        });
+            var infinite = new TimelineMax({ repeat: -1, paused: true });
+            var time = 15;
 
-        var endPos = $tickerWrapper.width() - listWidth;
+            infinite
+                .fromTo($list, time, { rotation: 0.01, x: 0 }, { force3D: true, x: -listWidth, ease: Linear.easeNone }, 0)
+                .fromTo($clonedList, time, { rotation: 0.01, x: listWidth }, { force3D: true, x: 0, ease: Linear.easeNone }, 0)
+                .set($list, { force3D: true, rotation: 0.01, x: listWidth })
+                .to($clonedList, time, { force3D: true, rotation: 0.01, x: -listWidth, ease: Linear.easeNone }, time)
+                .to($list, time, { force3D: true, rotation: 0.01, x: 0, ease: Linear.easeNone }, time)
+                .progress(1).progress(0)
+                .play();
 
-        $list.add($clonedList).css({
-            "width": listWidth + "px"
-        });
-
-        $clonedList.addClass("cloned").appendTo($tickerWrapper);
-
-        //TimelineMax
-        var infinite = new TimelineMax({ repeat: -1, paused: true });
-        var time = 15;
-
-        infinite
-            .fromTo($list, time, { rotation: 0.01, x: 0 }, { force3D: true, x: -listWidth, ease: Linear.easeNone }, 0)
-            .fromTo($clonedList, time, { rotation: 0.01, x: listWidth }, { force3D: true, x: 0, ease: Linear.easeNone }, 0)
-            .set($list, { force3D: true, rotation: 0.01, x: listWidth })
-            .to($clonedList, time, { force3D: true, rotation: 0.01, x: -listWidth, ease: Linear.easeNone }, time)
-            .to($list, time, { force3D: true, rotation: 0.01, x: 0, ease: Linear.easeNone }, time)
-            .progress(1).progress(0)
-            .play();
-
-        //Pause/Play		
-        $tickerWrapper.on("mouseenter", function () {
-            infinite.pause();
-        }).on("mouseleave", function () {
-            infinite.play();
+            $tickerWrapper.on("mouseenter", function () {
+                infinite.pause();
+            }).on("mouseleave", function () {
+                infinite.play();
+            });
         });
     </script>
 </body>

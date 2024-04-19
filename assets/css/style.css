@@ -450,19 +450,19 @@ iframe {
   background-color: #000;
 }
 
-.wwd .wwd-title {
+.wwd-title {
   padding: 0 !important;
   position: absolute;
   text-align: center;
   margin-top: -65px;
 }
 
-.wwd .wwd-title2 {
+.wwd-title2 {
   margin-top: -65px;
   text-align: center;
 }
 
-.wwd .wwd-title2 h2 {
+.wwd-title2 h2 {
   font-family: var(--h1-font-family);
   margin-bottom: 0;
   text-transform: uppercase;
@@ -1735,13 +1735,10 @@ textarea.input1+.shadow-input1 {
   margin-block: 4rem;
 }
 
-.faq-text {
-  margin-top: 15px;
-}
-
 .faq-text p {
-  color: blue;
+  color: var(--primary-color);
   font-size: 15px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -1754,174 +1751,95 @@ textarea.input1+.shadow-input1 {
 
 .faq-text span {
   font-family: var(--h-font-family);
-  color: blue;
-}
-
-:root {
-	--size-header: 2.25rem;
-	--size-accordion-title: 1.25rem;
-	--size-accordion-content: 1rem;
-	--animation-speed: 100;
-	--slide-ease: cubic-bezier(0.86, 0, 0.07, 1);
-	--slide-duration: calc(400ms * 100 / var(--animation-speed));
-	--slide-delay: calc(450ms * 100 / var(--animation-speed));
-	--circle-duration: calc(900ms * 100 / var(--animation-speed));
-}
-
-
-::selection {
-	background-color: rgba(0, 0, 0, 0.4);
+  color: var(--primary-color);
 }
 
 .accordion {
-	--circle-x: 1.8rem;
-	--circle-y: 0;
-	--circle-r: 200%;
-	--circle-bg: #fff;
-	color: #000;
-
-	background-color: var(--circle-bg);
-	margin-bottom: 1rem;
-	border-radius: min(8px, 0.5rem);
-
-	display: grid;
-	grid-template-rows: 0fr 0fr;
-	transition-timing-function: var(--slide-ease);
-	transition-duration: 200ms, 200ms, var(--slide-duration);
-	transition-property: opacity, box-shadow, grid-template-rows;
-	transition-delay: 0ms, 0ms, var(--slide-delay);
-	box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
-	opacity: 0.9;
+  margin-top: 25px;
 }
 
-.accordion:not(:target):hover {
-	box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+.accordion-item {
+  margin-bottom: 15px;
 }
 
-.accordion:not(:target):active {
-	opacity: 1;
-	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.3);
+.accordion-item{
+  border: 0;
+  border-radius: 0 !important;
 }
 
-.accordion,
-.content {
-	overflow: hidden;
+.accordion-header .accordion-button {
+  border: 0;
+  border-radius: 0 !important;
+  background-color: rgba(20, 182, 227, 0.05);
 }
 
-.accordion:target {
-	--d: 90deg;
-	grid-template-rows: 0fr 1fr;
-	transition: grid-template-rows var(--slide-ease) var(--slide-duration)
-		var(--slide-delay);
+.accordion-button:focus {
+  box-shadow: none;
 }
 
-.wrapper {
-	padding-block: 0 1.05rem;
-	padding-inline: 1.25rem;
+.accordion-button:not(.collapsed){
+  border: 0;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
-.content {
-	font-size: var(--size-accordion-content);
-	line-height: 140%;
+.accordion-button::after {
+  content: "\002B";
+  background-image: none;
+  color: #000;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-.content p {
-	margin-bottom: 1rem;
+.accordion-button:not(.collapsed)::after {
+  content: "\2212";
+  background-image: none;
+  transform: none;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 10px;
 }
 
-.content a {
-	color: currentColor;
-	font-weight: 800;
-	text-decoration: underline;
+.accordion-body {
+  border: 0;
+  box-shadow: 0px 5px 10px -3px rgba(0,0,0,0.1);
 }
 
-main :last-child,
-.content :last-child {
-	margin-bottom: 0;
+.faq-form {
+  background-color: var(--dark-color);
+  padding: 3rem;
 }
 
-.title a {
-	padding: 1rem 1.25rem;
-	font-size: var(--size-accordion-title);
-	font-weight: 800;
-	color: currentColor;
-	text-decoration: none;
-	display: flex;
-	flex-direction: row;
-	place-items: center;
+.faq-formhead {
+  margin-bottom: 30px;
 }
 
-.title a::before {
-	--chevron-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'%3E%3C!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath fill='white' d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z'/%3E%3C/svg%3E");
-	content: "";
-	left: 0;
-	top: 0;
-	width: 0.65rem;
-	aspect-ratio: 320 / 512;
-	display: inline-block;
-	margin-right: 0.75rem;
-	transform: rotate(var(--d, 0deg));
-	transition: transform var(--slide-ease) var(--slide-duration)
-		var(--slide-delay);
-	mask-image: var(--chevron-icon);
-	mask-size: 100% 100%;
-	-webkit-mask-image: var(--chevron-icon);
-	-webkit-mask-size: 100% 100%;
-	background-color: currentColor;
+.faq-formhead h2 {
+  font-family: var(--primary-font-family);
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--light-color);
+  font-size: 42px;
+  font-weight: 400;
+  text-shadow: 0px 5px 15px -3px rgb(0,0,0);
 }
 
-.accordion::before,
-.accordion::after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: var(--circle-bg);
-	mix-blend-mode: difference;
-	transform-style: preserve-3d;
-	transition-timing-function: ease;
-	transition-property: opacity, clip-path, visibility;
-	pointer-events: none;
-	clip-path: circle(var(--r) at var(--circle-x) var(--circle-y));
-	border-radius: inherit;
-	z-index: 4;
+.faq-formhead h2 span {
+  font-family: var(--h-font-family);
+  text-shadow: 0px 5px 15px -3px rgb(0,0,0);
 }
 
-.accordion::before {
-	--r: 0%;
-	transition-delay: var(--circle-duration), var(--circle-duration), 0ms;
-	transition-duration: 0ms, var(--circle-duration), 0ms;
-	opacity: 0;
+.faq-form .contact1-form {
+  padding-right: 0;
 }
 
-.accordion:target::before {
-	--r: var(--circle-r);
-	transition-delay: 0ms, 0ms, 0ms;
-	transition-duration: 0ms, var(--circle-duration), 0ms;
-	opacity: 1;
+.faq-form .wrap-input1 {
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-.accordion::after {
-	--r: var(--circle-r);
-	transition-delay: 0ms, 0ms, var(--circle-duration);
-	transition-duration: 0ms, var(--circle-duration), 0ms;
-	visibility: hidden;
-	opacity: 1;
-}
-
-.accordion:target:after {
-	--r: 0%;
-	transition-delay: 0ms, 0ms, 0ms;
-	transition-duration: 0ms, 0ms, 0ms;
-	visibility: visible;
-	opacity: 0;
-}
-
-.title a:focus-visible {
-	background-color: hsl(0, 100%, 90%);
-	outline: none;
-}
-
-.accordion:target .title a:focus-visible {
-	background-color: hsl(183, 100%, 93%);
+.faq-form .wrap-input1 .input1 {
+  box-shadow: 0px 5px 15px -3px rgb(0, 0, 0);
 }
