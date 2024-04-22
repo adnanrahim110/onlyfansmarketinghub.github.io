@@ -25,6 +25,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css" />
     <!-- MAIN CSS FILE -->
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 </head>
 
 <body>
@@ -59,10 +60,6 @@
                     <div class="mob-logo">
                         <a class="navbar-brand" href="#"><img src="assets/images/Logo-02.png" alt="" /></a>
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav nav-1">
                             <li class="nav-item">
@@ -92,6 +89,61 @@
                     </div>
                 </div>
             </nav>
+            <!-- Mob Navbar -->
+            <button id="open-menu" aria-label="Open menu">Menu</button>
+            <aside class="sidebar" id="sidebar">
+                <button id="close-menu" aria-label="Close menu">
+                    <div></div>
+                </button>
+                <div class="container">
+                    <div class="mob-nav">
+                        <div class="mob-brand">
+                            <a href="index.html"><img src="assets/images/footer-logo.png" alt=""></a>
+                        </div>
+                        <div class="mob-collapse" id="mobnav-right">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Our Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Agency Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="mob-social">
+                    <div class="mobsocial-box">
+                        <li class="social-item">
+                            <a class="social-link insta" href="#">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link mail" href="#">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a class="social-link call" href="#">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </aside>
             <!-- Social Links Header *** -->
             <div class="social-box" id="social">
                 <ul class="social row">
@@ -115,7 +167,7 @@
         </div>
         <!-- WWD SECTION -->
         <section class="wwd">
-            <div class="container-fluid text-center d-flex justify-content-center">
+            <div class="container-fluid text-center d-flex justify-content-center flex-column">
                 <div class="wwd-title container">
                     <h2>What We’ll Do <span>For You</span></h2>
                 </div>
@@ -194,9 +246,9 @@
 
         <!-- HIW SECTION -->
         <section class="hiw">
-            <div class="container-fluid px-0">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 hiw-text">
+                    <div class="col-md-6 col-12 hiw-text">
                         <div class="hiw-title">
                             <h2>How does it works</h2>
                         </div>
@@ -228,7 +280,7 @@
                             <button class="custom-btn">get started</button>
                         </a>
                     </div>
-                    <div class="col-md-6 px-0">
+                    <div class="col-md-6 col-12 px-0">
                         <div class="hiw-video">
                             <video autoplay loop muted src="assets/videos/swimming_girl.mp4"></video>
                         </div>
@@ -241,7 +293,7 @@
         <section class="ts">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-offset-2 col-md-12">
+                    <div class="col-12">
                         <div id="testimonial-slider" class="owl-carousel">
                             <div class="testimonial">
                                 <div class="pic">
@@ -386,7 +438,7 @@
                     <img class="reveal" src="assets/images/chart1.jpg" alt="" />
                 </a>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 col-12">
                 <div class="jso-text">
                     <h2>Just Starting Out? That’s Ok</h2>
                     <p>
@@ -424,13 +476,13 @@
         <section class="qbb">
             <div class="container-fluid d-flex align-items-center justify-content-center">
                 <div class="row my-4 py-4">
-                    <div class="col-md-8 pe-4">
+                    <div class="col-md-8 pe-md-4">
                         <h3>
                             It takes some time to get your account verified, use our direct
                             link to create your OnlyFans account now.
                         </h3>
                     </div>
-                    <div class="col-md-4 d-flex align-items-start justify-content-center ps-0 pe-4">
+                    <div class="col-md-4 d-flex align-items-start justify-content-center ps-0 pe-md-4">
                         <button class="btn-cta">
                             <span class="span">start onlyfans</span>
                             <span class="second">
@@ -467,12 +519,7 @@
             <div class="container">
                 <div class="pps-wrapper">
                     <div class="pps-item pps-i1">
-                        <div class="pps-overlay">
-                            <div class="row">
-                                <div class="col-6 pps-o1"></div>
-                                <div class="col-6 pps-o2"></div>
-                            </div>
-                        </div>
+                        <div class="pps-overlay"></div>
                     </div>
                     <div class="pps-item pps-i2">
                         <div class="pps-overlay"></div>
@@ -487,12 +534,7 @@
                         <div class="pps-overlay"></div>
                     </div>
                     <div class="pps-item pps-i6">
-                        <div class="pps-overlay">
-                            <div class="row">
-                                <div class="col-6 pps-o1"></div>
-                                <div class="col-6 pps-o2"></div>
-                            </div>
-                        </div>
+                        <div class="pps-overlay"></div>
                     </div>
                 </div>
             </div>
@@ -565,8 +607,8 @@
     <footer class="ufs">
         <div class="ufs-section">
             <div class="container">
-                <div class="cta d-block d-md-flex align-items-center justify-content-center">
-                    <div class="row cta-inner d-md-flex align-items-center">
+                <div class="cta d-block d-flex align-items-center justify-content-center">
+                    <div class="row cta-inner d-flex align-items-center">
                         <div class="cta-info row col-md-12">
                             <div class="col-md-8">
                                 <h2>Free your time and grow your account now.</h2>
@@ -616,22 +658,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="row footer-text">
-                    <div class="col-md-3">
+                <div class="row container-fluid footer-text">
+                    <div class="col-md-3 col-12 ufs-logo">
                         <a href="#" class="footer-logo"><img src="assets/images/footer-logo.png" alt="" /></a>
                         <hr class="ufs-hr">
                         <p class="copyright">
                             <small>Copyright &copy; 2024</small>
                         </p>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-3">
                         <h3>Customers</h3>
                         <ul class="list-unstyled links">
                             <li><a href="#">Buyer</a></li>
                             <li><a href="#">Supplier</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-3 comp">
                         <h3>Company</h3>
                         <ul class="list-unstyled links">
                             <li><a href="#">About us</a></li>
@@ -639,14 +681,14 @@
                             <li><a href="#">Contact us</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-6">
                         <h3>Further Information</h3>
                         <ul class="list-unstyled links">
                             <li><a href="#">Terms &amp; Conditions</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 d-flex justify-content-start ps-5">
+                    <div class="col-md-3 col-12 d-flex justify-content-md-start ps-md-5 ufs-social">
                         <div class="social-links text-center">
                             <h3>Follow Us On</h3>
                             <div class="main">

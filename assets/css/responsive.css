@@ -1,0 +1,71 @@
+@media only screen and (min-width: 400px) and (max-width: 480px){
+    .home-banner .content { justify-content: center;display: flex;flex-direction: 
+        column;align-items: center;text-align: center;}
+    .main-text .content .text h2 {font-size: 30px;}
+    .web-logo {display: none;}
+    .navbar { display: none;}
+    .social-box { display: none;}
+    .wwd { padding-block: 1rem 3rem;}
+    .wwd-title {margin-bottom: -15px;}
+    .wwd-title h2 {font-size: 3rem; line-height: .8;}
+    .wwd-content .col-md-3 {padding: 10px 11px;}
+    .hiw-text {padding: 30px 20px 0 20px; margin-block: 20px;}
+    .hiw-title h2 {font-size: 25px;}
+    .hiw-text p {font-size: 11px;}
+    .ts {margin-top: -10px;}
+    .wwd-title2 h2 {font-size: 2.5rem; line-height: .9; margin-bottom: -20px;}
+    .jso {margin: 5rem 20px;}
+    .jso-img {margin-left: 3rem;}
+    .jso .col-md-7 {position: initial; margin-top: 5rem;}
+    .jso-text {background-color: transparent; text-align: start;}
+    .jso-text::before {top: unset; margin-top: -25px;}
+    .ewg {padding-top: 1rem;}
+    .ewg h2 {margin-bottom: 10px;}
+    .ewg-img {width: 100%; height: 50dvh;}
+    .ewg-img .ewg-overlay {width: 100%; height: 50dvh}
+    .qbb {margin-top: 1rem;}
+    .qbb h3 {font-size: 19px; padding-inline: 10px; text-align: center; margin-bottom: 20px;}
+    .btn-cta {font-size: 15px; padding: 10px 20px;}
+    .btn-cta:hover {padding-left: 20px;}
+    .wwd-title3 {padding: 0;}
+    .wwd-title3 h2 {font-size: 1.8rem; line-height: .9; -webkit-text-stroke: 2px #383838;}
+    .wwd-title3 h2 span {-webkit-text-stroke: 1.5px #979797;}
+    .pps-wrapper {margin-top: 15px; grid-gap: 10px;}
+    .pps-i1 {grid-column: 1/3; grid-row: 1/2;}
+    .pps-i2 {grid-column: 1/2; grid-row: 2/3;}
+    .pps-i3 {grid-column: 2/3; grid-row: 2/3;}
+    .pps-i4 {grid-column: 1/2; grid-row: 3/4;}
+    .pps-i5 {grid-column: 2/3; grid-row: 3/4;}
+    .pps-i6 {grid-column: 1/3; grid-row: 4/5;}
+    .cuf-text {padding: 0 1rem 2rem 1rem;}
+    .cuf-text h2 {font-size: 30px;}
+    .cuf-text h1 {font-size: 3.4rem; line-height: .8;}
+    .cuf-p2 {font-size: 16px;}
+    .cuf-p3 {font-size: 14px;}
+    .contact1-form {padding-right: 0;}
+    .ufs {height: 100dvh; padding: 0;}
+    .ufs .cta {transform: skew(0); margin-inline: 20px 5px; top: -80px; padding: 10px 0;
+        box-shadow: -15px -15px 0 0 rgba(20, 182, 227, 0.2);}
+    .ufs .cta-inner {flex-direction: column; transform: skew(0);}
+    .cta-inner hr {margin: .5rem 0;}
+    .cta-info {margin-bottom: 10px; padding-inline: 0;}
+    .cta-info h2 {font-size: 16px; text-align: center; margin-bottom: 10px;}
+    .footer-cta {font-size: 12px; padding: 6px 15px;}
+    .footer-cta:hover {padding-left: 15px;}
+    .footer-cta .span { display: flex; align-items: center;}
+    .cta-info-1 {flex-wrap: wrap; padding-right: 0;}
+    .cta-info-1 .ph {margin-right: 20px; font-size: 13px;}
+    .cta-info-1 .ma {margin-right: 0; font-size: 13px;}
+    .cta-info-1 .add {font-size: 13px; margin-top: 5px;}
+    .cta-loc {margin-top: 10px;}
+    .footer-text {position: absolute; top: 10.5rem; width: 100dvw;}
+    .ufs-logo {display: flex; justify-content: center; flex-direction: column; 
+        align-items: center; margin-bottom: 20px;}
+    .footer-logo img {height: 60px; width: 200px;}
+    .ufs h3 {font-size: 15px; line-height: 1;}
+    .ufs .links li {line-height: 1; margin-bottom: 5px;}
+    .ufs .links li a {font-size: 13px;}
+    .comp {padding-right: 0;}
+    .ufs-social {justify-content: center; padding-inline: 0;}
+    .social-links {margin-top: 20px;}
+} 
