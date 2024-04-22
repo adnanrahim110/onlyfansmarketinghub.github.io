@@ -470,9 +470,9 @@ iframe {
 #open-menu {
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 700;
-  padding: 2px 8px;
+  padding: 5px 15px;
   cursor: pointer;
   position: fixed;
   z-index: 2;
@@ -496,7 +496,7 @@ iframe {
   position: absolute;
   top: 13px;
   left: 8px;
-  width: 15px;
+  width: 20px;
   height: 2px;
   border-radius: 5px;
   background-color: #fff;
@@ -507,7 +507,7 @@ iframe {
   position: absolute;
   bottom: 10px;
   left: 8px;
-  width: 15px;
+  width: 20px;
   height: 2px;
   border-radius: 5px;
   background-color: #fff;
@@ -522,10 +522,6 @@ iframe {
   height: 50px;
 }
 
-.mob-nav {
-  height: 96dvh;
-}
-
 .mob-collapse .navbar-nav {
   padding-top: 10rem;
 }
@@ -536,8 +532,10 @@ iframe {
 }
 
 .mob-social {
-  height: 5dvh;
   background-color: var(--primary-color);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }
 
 .mobsocial-box {
