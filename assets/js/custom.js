@@ -100,13 +100,39 @@ window.addEventListener("scroll", reveal);
 })(jQuery);
 
 
-const sidebar = document.querySelector('.sidebar')
-const openMenu = document.querySelector('#open-menu')
-const closeMenu = document.querySelector('#close-menu')
+$(function() {
 
-openMenu.addEventListener('click', toggleSidebarVisibility)
-closeMenu.addEventListener('click', toggleSidebarVisibility)
+  'use strict';
 
-function toggleSidebarVisibility() {
-    sidebar.classList.toggle('sidebar--visible');
-}
+  $('.js-menu-toggle').click(function(e) {
+
+  	var $this = $(this);
+
+  	
+
+  	if ( $('body').hasClass('show-sidebar') ) {
+  		$('body').removeClass('show-sidebar');
+  		$this.removeClass('active');
+  	} else {
+  		$('body').addClass('show-sidebar');	
+  		$this.addClass('active');
+  	}
+
+  	e.preventDefault();
+
+  });
+
+  // click outisde offcanvas
+	$(document).mouseup(function(e) {
+    var container = $(".sidebar");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      if ( $('body').hasClass('show-sidebar') ) {
+				$('body').removeClass('show-sidebar');
+				$('body').find('.js-menu-toggle').removeClass('active');
+			}
+    }
+	}); 
+
+    
+
+});
