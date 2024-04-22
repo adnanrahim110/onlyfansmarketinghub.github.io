@@ -452,11 +452,9 @@ iframe {
 aside {
   height: 100vh;
   min-height: 580px;
-}
-
-aside {
   width: 300px;
   left: 0;
+  top: 0;
   z-index: 1001;
   position: fixed;
   -webkit-transform: translateX(-100%);
@@ -805,6 +803,7 @@ main .post-content .post-meta {
 /* ts section */
 
 .ts {
+  margin-top: -7px;
   background: linear-gradient(to right bottom, #56d1f3, #158cad, #56d1f3);
   padding-block: 4rem 1.7rem;
 }
@@ -1509,17 +1508,7 @@ textarea.input1+.shadow-input1 {
 
 /*[ Responsive ]*/
 
-@media (max-width: 1200px) {
-  .contact1-pic {
-    width: 33.5%;
-  }
-
-  .contact1-form {
-    width: 44%;
-  }
-}
-
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .container-contact1 {
     padding: 90px 80px 88px 90px;
   }
@@ -1952,7 +1941,7 @@ textarea.input1+.shadow-input1 {
 
 
 /* -----------------------------
-          CONTACT PAGE
+          FAQ PAGE
 ------------------------------ */
 
 .faq-banner {

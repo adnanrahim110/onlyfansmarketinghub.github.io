@@ -1,10 +1,4 @@
 @media only screen and (min-width: 400px) and (max-width: 480px){
-    .home-banner .content { justify-content: center;display: flex;flex-direction: 
-        column;align-items: center;text-align: center;}
-    .main-text .content .text h2 {font-size: 30px;}
-    .web-logo {display: none;}
-    .navbar { display: none;}
-    .social-box { display: none;}
     .wwd { padding-block: 1rem 3rem;}
     .wwd-title {margin-bottom: -15px;}
     .wwd-title h2 {font-size: 3rem; line-height: .8;}
@@ -58,19 +52,61 @@
     .cta-info-1 .ma {margin-right: 0; font-size: 13px;}
     .cta-info-1 .add {font-size: 13px; margin-top: 5px;}
     .cta-loc {margin-top: 10px;}
-    .footer-text {position: absolute; top: 10.5rem; width: 100dvw;}
+    .footer-text {position: absolute; top: 12rem; width: 100dvw;}
     .ufs-logo {display: flex; justify-content: center; flex-direction: column; 
-        align-items: center; margin-bottom: 20px;}
+        align-items: center; margin-bottom: 40px;}
     .footer-logo img {height: 60px; width: 200px;}
     .ufs h3 {font-size: 15px; line-height: 1;}
     .ufs .links li {line-height: 1; margin-bottom: 5px;}
     .ufs .links li a {font-size: 13px;}
     .comp {padding-right: 0;}
     .ufs-social {justify-content: center; padding-inline: 0;}
-    .social-links {margin-top: 20px;}
+    .social-links {margin-top: 50px;}
 }
 
+@media only screen and (max-width: 991px) {
+    .home-banner .content { justify-content: center;display: flex;flex-direction: 
+        column;align-items: center;text-align: center;}
+    .main-text .content .text h2 {font-size: 30px;}
+    .web-logo {display: none;}
+    .navbar { display: none;}
+    .social-box { display: none;}
+}
 @media only screen and (min-width: 992px) {
     .sidebar {display: none;}
     #open-menu{display: none;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1123px) {
+    .nav-link {font-size: 11px;}
+    .nav-2 {margin-left: 20px;}
+    .wwd-content .col-md-3 {padding: 0 8px;}
+    .wwd-box .outline {height: 250px;}
+    .wwd-icon img {height: 50px; width: 50px;}
+    .wwd-box h5 {font-size: 18px;}
+    .wwd-box p {font-size: 13px; margin-top: 15px;}
+    .wwd-title {margin-bottom: -10px;}
+    .hiw-title h2 {margin-bottom: 15px;}
+    .hiw-text p {margin-bottom: 15px;}
+    .hiw-text .custom-btn {margin-bottom: 30px;}
+    .jso .col-md-7 {left: 42%; top: 5rem;}
+    .qbb h3 {font-size: 18px;}
+    .cuf-text h2 {font-size: 35px;}
+    .cuf-text h1 {font-size: 2.2rem;}
+    .cuf-p2 {font-size: 16px;}
+    .cuf-p3 {font-size: 14px;}
+    .cta-info h2 {font-size: 24px;}
+    .footer-cta {font-size: 14px;}
+    .cta-info-1 .ph {margin-right: 10px;}
+    .cta-info-1 .ma {margin-right: 10px;}
+    .ufs {padding: 3rem 0 1rem 0;}
+    .footer-logo img {width: 220px;}
+    .faq-formhead h2 {font-size: 35px;}
+    .faq-form {padding: 3rem 1.5rem;}
+    .faq-form .wrap-input1 {margin-bottom: 20px;}
+    .faq-text h1 {font-size: 35px;}
+    .faq-text p {font-size: 14px;}
+    .accordion {margin-top: 20px;}
+    .accordion-body {font-size: 13px;}
+    .accordion-button {padding-block: .95rem;}
 }
