@@ -450,7 +450,7 @@ iframe {
 /* Mob Navbar */
 
 .sidebar {
-  height: 100dvh;
+  height: 100%;
   width: 50%;
   background-color: #000;
   right: -100%;
