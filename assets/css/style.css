@@ -515,7 +515,7 @@ iframe {
 }
 
 .mob-brand {
-  margin-top: 30px;
+  padding-top: 5rem;
 }
 .mob-brand img {
   width: 180px;
@@ -523,20 +523,20 @@ iframe {
 }
 
 .mob-nav {
-  height: 85dvh;
+  height: 96dvh;
 }
 
 .mob-collapse .navbar-nav {
-  margin-top: 50px;
+  padding-top: 10rem;
 }
 
 .mob-collapse .nav-item{
-  text-align: center;
+  text-align: start ;
   color: #fff;
 }
 
 .mob-social {
-  height: 18dvh;
+  height: 5dvh;
   background-color: var(--primary-color);
 }
 
@@ -546,7 +546,7 @@ iframe {
 }
 
 .mobsocial-box .social-item {
-  margin: 10px 15px;
+  margin: 8px 15px;
 }
 
 
