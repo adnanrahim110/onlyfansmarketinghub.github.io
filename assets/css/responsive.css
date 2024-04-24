@@ -3,9 +3,10 @@
     .wwd-title {margin-bottom: -15px;}
     .wwd-title h2 {font-size: 3rem; line-height: .8;}
     .wwd-content .col-md-3 {padding: 10px 11px;}
-    .hiw-text {padding: 30px 20px 0 20px; margin-block: 20px;}
+    .hiw-text {padding: 30px 20px 0 20px; margin-block: 20px; height: 65dvh;}
     .hiw-title h2 {font-size: 25px;}
     .hiw-text p {font-size: 11px;}
+    .hiw-video {display: none;}
     .ts {margin-top: -10px;}
     .wwd-title2 h2 {font-size: 2.5rem; line-height: .9; margin-bottom: -20px;}
     .jso {margin: 5rem 20px;}
@@ -13,12 +14,15 @@
     .jso .col-md-7 {position: initial; margin-top: 5rem;}
     .jso-text {background-color: transparent; text-align: start;}
     .jso-text::before {top: unset; margin-top: -25px;}
+    .jso-text h2 {font-size: 18px; margin-bottom: 10px;}
+    .jso-text p {font-size: 12px; margin-bottom: 10px;}
     .ewg {padding-top: 1rem;}
-    .ewg h2 {margin-bottom: 10px;}
-    .ewg-img {width: 100%; height: 50dvh;}
-    .ewg-img .ewg-overlay {width: 100%; height: 50dvh}
+    .ewg h2 {margin-bottom: 10px; font-size: 20px;}
+    .ewg p {font-size: 12px;}
+    .ewg-img {width: 100%; height: 25dvh;}
+    .ewg-img .ewg-overlay {width: 100%; height: 25dvh}
     .qbb {margin-top: 1rem;}
-    .qbb h3 {font-size: 19px; padding-inline: 10px; text-align: center; margin-bottom: 20px;}
+    .qbb h3 {font-size: 15px; padding-inline: 10px; text-align: center; margin-bottom: 20px;}
     .btn-cta {font-size: 15px; padding: 10px 20px;}
     .btn-cta:hover {padding-left: 20px;}
     .wwd-title3 {padding: 0;}
@@ -62,6 +66,29 @@
     .comp {padding-right: 0;}
     .ufs-social {justify-content: center; padding-inline: 0;}
     .social-links {margin-top: 50px;}
+    .serv-left {padding: 2rem; text-align: center;}
+    .serv-left h1 {font-size: 30px; margin-bottom: 10px;}
+    .serv-left p { font-size: 14px;}
+    .serv-right .serv-text h3 {font-size: 22px;}
+    .serv-no h1 {font-size: 4rem;}
+    .serv-right .wrapper {padding: 3rem 1rem; display: flex; flex-direction: column; align-items: center; 
+        justify-content: center;}
+    .serv-right .serv-item {width: 300px; height: 250px; transition: all .3s linear; padding: 25px 30px; 
+        }
+    .serv-1:hover {background:linear-gradient(to top,rgba(200, 200, 200, 0.5),rgba(255, 255, 255, 0.5)),
+        url(../images/serv-1.jpg);background-repeat: no-repeat; background-size: cover; background-position: center;}
+    .serv-2:hover {background:linear-gradient(to top,rgba(200, 200, 200, 0.5),rgba(255, 255, 255, 0.5)),
+        url(../images/serv-2.jpg);background-repeat: no-repeat; background-size: cover; background-position: center;}
+    .serv-3:hover {background:linear-gradient(to top,rgba(200, 200, 200, 0.5),rgba(255, 255, 255, 0.5)),
+        url(../images/serv-3.jpg);background-repeat: no-repeat; background-size: cover; background-position: center;}
+    .serv-4:hover {background:linear-gradient(to top,rgba(200, 200, 200, 0.5),rgba(255, 255, 255, 0.5)),
+        url(../images/serv-4.jpg);background-repeat: no-repeat; background-size: cover; background-position: center;}
+    .serv-item:hover .serv-text h3 {color: #0a0a0a;}
+    .serv-item:hover .serv-text p {color: #000000;}
+    .serv-right .serv-item:hover .serv-no h1 {text-shadow: -2px -2px 0 rgba(0, 0, 0, 0.3);}
+    .serv-1, .serv-3 {border-right: 1px solid #bfbfbf;}
+    .serv-2, .serv-3 {border-bottom: 0;}
+    .serv-overlay {display: none;}
 }
 
 @media only screen and (max-width: 991px) {
@@ -74,6 +101,7 @@
 }
 @media only screen and (min-width: 992px) {
     .sidebar {display: none;}
+    .mob-navbar {display: none;}
     #open-menu{display: none;}
 }
 
