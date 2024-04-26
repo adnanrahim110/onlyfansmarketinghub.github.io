@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <main>
+    <main id="faq-home">
         <!-- HERO SECTION  -->
         <div class="faq-banner banners d-flex flex-column justify-content-center align-items-center">
             <!-- Header *** -->
@@ -49,97 +49,98 @@
             </div>
             <!-- Navbar *** -->
             <nav class="navbar sticky navbar-expand-lg col-lg-12" id="bottomNav">
-                <div class="container-fluid">
-                    <div class="mob-logo">
-                        <a class="navbar-brand" href="index.html"><img src="assets/images/Logo-02.png" alt="" /></a>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav nav-1">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Our Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Education</a>
-                            </li>
-                        </ul>
-                        <div class="web-logo">
-                            <a class="navbar-brand" href="index.html"><img src="assets/images/Logo-02.png" alt="" /></a>
-                        </div>
-                        <ul class="navbar-nav nav-2">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Agency Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="faq.html">FAQ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+              <div class="container-fluid">
+                <div class="mob-logo">
+                  <a class="navbar-brand" href="#"><img src="assets/images/Logo-02.png" alt="" /></a>
                 </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav nav-1">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our Services
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="brandingandidentity.html">Branding & Identity</a></li>
+                        <li><a class="dropdown-item" href="onlyfansmanagement.html">Onlyfans Management</a></li>
+                        <li><a class="dropdown-item" href="socialmediamarketing.html">Social Media Marketing</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <span class="drop-arrow"><ion-icon name="caret-down-outline" class="drop-ico"></ion-icon></span>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                  </ul>
+                  <div class="web-logo">
+                    <a class="navbar-brand" href="#"><img src="assets/images/Logo-02.png" alt="" /></a>
+                  </div>
+                  <ul class="navbar-nav nav-2">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#faq-home">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </nav>
             <!-- Mob Navbar -->
-            <button id="open-menu" aria-label="Open menu">Menu</button>
-            <aside class="sidebar" id="sidebar">
-                <button id="close-menu" aria-label="Close menu">
-                    <div></div>
-                </button>
-                <div class="container">
-                    <div class="mob-nav">
-                        <div class="mob-brand">
-                        </div>
-                        <div class="mob-collapse" id="mobnav-right">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Our Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Education</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Agency Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="faq.html">FAQ</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <aside class="sidebar">
+              <div class="toggle">
+                <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+                  <span></span>
+                </a>
+              </div>
+              <div class="side-inner">
+                <div class="profile">
+                  <img src="assets/images/Logo-02.png" alt="Image" class="img-fluid" />
                 </div>
-                <div class="mob-social">
-                    <div class="mobsocial-box">
-                        <li class="social-item">
-                            <a class="social-link insta" href="#">
-                                <ion-icon name="logo-instagram"></ion-icon>
-                            </a>
-                        </li>
-                        <li class="social-item">
-                            <a class="social-link mail" href="#">
-                                <ion-icon name="mail-outline"></ion-icon>
-                            </a>
-                        </li>
-                        <li class="social-item">
-                            <a class="social-link call" href="#">
-                                <ion-icon name="call-outline"></ion-icon>
-                            </a>
-                        </li>
-                    </div>
+      
+                <div class="nav-menu">
+                  <ul>
+                    <li class="active">
+                      <a href="#home"><span class="icon-home mr-3"></span>Home</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="icon-notifications mr-3"></span>
+                        our Services
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="brandingandidentity.html">Branding & Identity</a></li>
+                        <li><a href="onlyfansmanagement.html">Onlyfans Management</a></li>
+                        <li><a href="socialmediamarketing.html">Social Media Marketing</a></li>
+                        <li><a href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#testimonials"><span class="icon-location-arrow mr-3"></span>Testimonials</a>
+                    </li>
+                    <li>
+                      <a href="about-us.html"><span class="icon-pie-chart mr-3"></span>About Us</a>
+                    </li>
+                    <li>
+                      <a href="contact.html"><span class="icon-pie-chart mr-3"></span>Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="faq.html"><span class="icon-sign-out mr-3"></span>F A Q</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </aside>
+            <nav class="mob-navbar" id="mobNav">
+              <div class="mnb-logo">
+                <img src="assets/images/footer-logo.png" alt="">
+              </div>
+            </nav>
             <!-- Social Links Header *** -->
             <div class="social-box social-s" id="social">
                 <ul class="social row">
@@ -391,8 +392,8 @@
     <!-- FOOTER -->
     <footer class="ufs">
         <div class="ufs-section">
-            <div class="container">
-                <div class="cta d-block d-flex align-items-center justify-content-center">
+            <div class="container-fluid d-flex flex-column align-items-center">
+                <div class="container cta d-block d-flex align-items-center justify-content-center">
                     <div class="row cta-inner d-flex align-items-center">
                         <div class="cta-info row col-md-12">
                             <div class="col-md-8">
@@ -444,33 +445,28 @@
                     </div>
                 </div>
                 <div class="row container-fluid footer-text">
-                    <div class="col-md-3 col-12 ufs-logo">
-                        <a href="#" class="footer-logo"><img src="assets/images/footer-logo.png" alt="" /></a>
-                        <hr class="ufs-hr">
-                        <p class="copyright">
-                            <small>Copyright &copy; 2024</small>
+                    <div class="col-md-4 col-12 ufs-logo">
+                        <a href="index.html" class="footer-logo"><img src="assets/images/footer-logo.png" alt="" /></a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ex doloremque nobis architecto doloribus expedita possimus tenetur a explicabo atque!
                         </p>
                     </div>
-                    <div class="col-md-2 col-3">
-                        <h3>Customers</h3>
+                    <div class="col-md-3 col-8 ufs-serv">
+                        <h3>Services</h3>
                         <ul class="list-unstyled links">
-                            <li><a href="#">Buyer</a></li>
-                            <li><a href="#">Supplier</a></li>
+                            <li><a href="brandingandidentity.html">Branding & Identity</a></li>
+                            <li><a href="socialmediamarketing.html">Social Media Marketing</a></li>
+                            <li><a href="onlyfansmanagement.html">OnlyFans Management</a></li>
+                            <li><a href="#">OnlyFans Management</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-2 col-3 comp">
+                    <div class="col-md-2 col-4 ufs-comp">
                         <h3>Company</h3>
                         <ul class="list-unstyled links">
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Contact us</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-2 col-6">
-                        <h3>Further Information</h3>
-                        <ul class="list-unstyled links">
-                            <li><a href="#">Terms &amp; Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About us</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="index.html?#testimonials">Testimonials</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3 col-12 d-flex justify-content-md-start ps-md-5 ufs-social">
@@ -521,6 +517,21 @@
                         </div>
                     </div>
                 </div>
+                <hr class="ufs-hr">
+                <div class="col-12 ufs-sign">
+                    <div class="row">
+                        <div class="col-12 ufs-copy">
+                            <span class="ufs-copyright">
+                                <span>&copy;&nbsp;</span>
+                                2024 • OnlyFans Marketing Hub
+                            </span>
+                            <p class="ufs-terms">
+                                <a href="">terms and Conditions</a>
+                                <a href="">Privacy Policy</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -568,6 +579,18 @@
                 infinite.play();
             });
         });
+    </script>
+    <!-- STICKY NAVBAR -->
+    <script>
+      const mobnav = document.getElementById("mobNav");
+  
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          mobnav.classList.add("sticknav");
+        } else {
+          mobnav.classList.remove("sticknav");
+        }
+      });
     </script>
 </body>
 

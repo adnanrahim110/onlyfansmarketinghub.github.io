@@ -82,9 +82,9 @@
     .wrap-input1 {width: 100%; margin-bottom: 10px; padding-inline: 0;}
     input.input1 {height: 45px;}
     .form-btn {padding-inline: 1em 3em; font-size: 15px;}
-    .ufs {height: 88dvh; padding: 0;}
-    .ufs .cta {transform: skew(0); margin-inline: 20px 5px; top: -80px; padding: 10px 0;
-        box-shadow: -15px -15px 0 0 rgba(20, 182, 227, 0.2);}
+    .ufs {padding: 0;}
+    .ufs .cta {transform: skew(0); margin-inline: 20px 15px; top: -80px; padding: 10px 0;
+        box-shadow: -10px -10px 0 0 rgba(20, 182, 227, 0.2);}
     .ufs .cta-inner {flex-direction: column; transform: skew(0);}
     .cta-inner hr {margin: .5rem 0;}
     .cta-info {margin-bottom: 10px; padding-inline: 0;}
@@ -97,20 +97,19 @@
     .cta-info-1 .ma {margin-right: 0; font-size: 15px; margin-top: 5px;}
     .cta-info-1 .add {font-size: 15px; margin-top: 5px;}
     .cta-loc {margin-top: 10px;}
-    .footer-text {position: absolute; top: 12rem; width: 100dvw;}
-    .ufs .ufs-logo {display: flex; justify-content: center; flex-direction: column; 
-        align-items: center; margin-bottom: 40px;}
-    .ufs .footer-logo { margin-top: 0;}
-    .footer-logo img {height: 60px; width: 200px;}
-    .ufs h3 {font-size: 13px; line-height: 1;}
-    .ufs .cust, .ufs .comp {width: 30% !important;}
-    .ufs .finfo {width: 40%;}
-    .finfo h3 {margin-top: -7px;}
-    .ufs .links li {line-height: 1; margin-bottom: 5px;}
-    .ufs .links li a {font-size: 13px;}
-    .comp {padding-right: 0;}
+    .ufs-logo {margin-bottom: 40px;  padding-inline: 0; text-align: center;}
+    .footer-logo img {height: 70px; width: 250px;}
+    .ufs-logo p {padding-inline: 5px; text-align: center;}
+    .ufs-serv {padding-left: 0;}
+    .ufs-comp {padding-left: 0;}
+    .footer-text h3 {font-size: 18px;}
+    .footer-text li a {font-size: 15px;}
     .ufs-social {justify-content: center; padding-inline: 0;}
-    .social-links {margin-top: 50px;}
+    .social-links {margin-top: 40px;}
+    .social-links h3 {margin-bottom: 20px;}
+    .ufs-copy {text-align: center; padding-inline: 20px;}
+    .ufs-copyright {font-size: 11px;}
+    .ufs-terms a {margin-inline: 5px; font-size: 9px;}
 }
 @media only screen and (min-width: 400px) and (max-width: 480px){
     .wwd { padding-block: 1rem 3rem;}
@@ -159,9 +158,9 @@
     .cuf-p3 {font-size: 14px;}
     .contact1-form {padding-right: 0;}
     .wrap-input1 {width: 100%; margin-bottom: 10px; padding-inline: 0;}
-    .ufs {height: 62dvh; padding: 0;}
-    .ufs .cta {transform: skew(0); margin-inline: 20px 5px; top: -80px; padding: 10px 0;
-        box-shadow: -15px -15px 0 0 rgba(20, 182, 227, 0.2);}
+    .ufs {padding: 0;}
+    .ufs .cta {transform: skew(0); margin-inline: 20px 15px; top: -80px; padding: 10px 0;
+        box-shadow: -10px -10px 0 0 rgba(20, 182, 227, 0.2);}
     .ufs .cta-inner {flex-direction: column; transform: skew(0);}
     .cta-inner hr {margin: .5rem 0;}
     .cta-info {margin-bottom: 10px; padding-inline: 0;}
@@ -170,20 +169,23 @@
     .footer-cta:hover {padding-left: 15px;}
     .footer-cta .span { display: flex; align-items: center;}
     .cta-info-1 {flex-wrap: wrap; padding-right: 0;}
-    .cta-info-1 .ph {margin-right: 20px; font-size: 13px;}
-    .cta-info-1 .ma {margin-right: 0; font-size: 13px;}
-    .cta-info-1 .add {font-size: 13px; margin-top: 5px;}
+    .cta-info-1 .ph {margin-right: 20px; font-size: 15px;}
+    .cta-info-1 .ma {margin-right: 0; font-size: 15px; margin-top: 5px;}
+    .cta-info-1 .add {font-size: 15px; margin-top: 5px;}
     .cta-loc {margin-top: 10px;}
-    .footer-text {position: absolute; top: 12rem; width: 100dvw;}
-    .ufs-logo {display: flex; justify-content: center; flex-direction: column; 
-        align-items: center; margin-bottom: 40px;}
-    .footer-logo img {height: 60px; width: 200px;}
-    .ufs h3 {font-size: 15px; line-height: 1;}
-    .ufs .links li {line-height: 1; margin-bottom: 5px;}
-    .ufs .links li a {font-size: 13px;}
-    .comp {padding-right: 0;}
+    .ufs-logo {margin-bottom: 40px;  padding-inline: 0; text-align: center;}
+    .footer-logo img {height: 70px; width: 250px;}
+    .ufs-logo p {padding-inline: 5px; text-align: center;}
+    .ufs-serv {padding-left: 0;}
+    .ufs-comp {padding-left: 0;}
+    .footer-text h3 {font-size: 18px;}
+    .footer-text li a {font-size: 16px;}
     .ufs-social {justify-content: center; padding-inline: 0;}
-    .social-links {margin-top: 50px;}
+    .social-links {margin-top: 40px;}
+    .social-links h3 {margin-bottom: 20px;}
+    .ufs-copy {text-align: center; padding-inline: 20px; margin-bottom: 10px;}
+    .ufs-copyright {font-size: 11px;}
+    .ufs-terms a {margin-inline: 5px; font-size: 9px;}
     .serv-left {padding: 2rem; text-align: center;}
     .serv-left h1 {font-size: 30px; margin-bottom: 10px;}
     .serv-left p { font-size: 14px;}
