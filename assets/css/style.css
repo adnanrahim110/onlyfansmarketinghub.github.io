@@ -927,7 +927,7 @@ main .post-content .post-meta {
 
 @media only screen and (max-width: 479px) {
   .testimonial {
-    padding: 70px 10px 30px;
+    padding: 30px 10px 30px;
   }
 
   .testimonial .description:before {
@@ -1492,7 +1492,7 @@ input.input1 {
 }
 
 textarea.input1 {
-  min-height: 150px;
+  min-height: 120px;
   padding: 12px 30px;
   resize: none;
 }
