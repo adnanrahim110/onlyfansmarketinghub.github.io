@@ -513,7 +513,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <form class="contact1-form validate-form">
+              <form class="contact1-form validate-form" action="assets/config/code.php" method="POST">
                 <div class="wrap-input1 validate-input" data-validate="Name is required">
                   <input class="input1" type="text" name="name" placeholder="Full Name" />
                   <span class="shadow-input1"></span>
@@ -539,7 +539,7 @@
                 </div>
 
                 <div class="container-contact1-form-btn">
-                  <button class="form-btn">
+                  <button class="form-btn" id="submit_btn" name="submit_btn" type="submit">
                     Get started
                     <div class="icon">
                       <i class="fa fa-arrow-right"></i>

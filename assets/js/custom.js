@@ -90,11 +90,6 @@ window.addEventListener("scroll", reveal);
       check = false;
     }
 
-    if ($(subject).val().trim() == "") {
-      showValidate(subject);
-      check = false;
-    }
-
     if (
       $(email)
         .val()
@@ -107,15 +102,13 @@ window.addEventListener("scroll", reveal);
       check = false;
     }
 
-    if (
-      $(phone)
-        .val()
-        .trim()
-        .match(
-          /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/
-        ) == null
-    ) {
+    if ($(phone).val().trim() == "") {
       showValidate(phone);
+      check = false;
+    }
+
+    if ($(subject).val().trim() == "") {
+      showValidate(subject);
       check = false;
     }
 
