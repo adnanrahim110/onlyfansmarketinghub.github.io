@@ -29,6 +29,24 @@
 </head>
 
 <body>
+    <!-- START LOADER -->
+    <section id="loader">
+      <div class="loading">
+        <svg viewBox="0 0 187.3 93.7" height="200px" width="300px" class="svgbox">
+         <defs>
+           <linearGradient y2="0%" x2="100%" y1="0%" x1="0%" id="gradient">
+             <stop stop-color="pink" offset="0%"></stop>
+             
+                <stop stop-color="blue" offset="100%"></stop>
+           </linearGradient>
+         </defs>
+       
+         <path stroke="url(#gradient)" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"></path>
+       </svg>
+       
+       </div>
+    </section>
+    <!-- END LOADER -->
     <main id="service-home">
         <!-- HERO SECTION  -->
         <div class="brand-banner banners d-flex flex-column justify-content-center align-items-center">
@@ -137,7 +155,7 @@
                                         <a href="socialmediamarketing.html">Social Media Marketing</a>
                                     </li>
                                     <li>
-                                        <a href="contentstrategy.html">Content Strategy & Creation</a>
+                                        <a href="contentstrategy.html">Content Creation & Strategy</a>
                                     </li>
                                 </ul>
                             </li>
@@ -212,8 +230,8 @@
                     </div>
                     <div class="col-6">
                         <a class="d-flex justify-content-between align-items-center py-3"
-                            href="brandingandidentity.html">
-                            <div class="serv-btn"><span>Social Media Marketing</span></div>
+                            href="contentstrategy.html">
+                            <div class="serv-btn"><span>Content Creation & Strategy</span></div>
                             <div><ion-icon name="chevron-forward-outline"></ion-icon></div>
                         </a>
                     </div>
@@ -275,9 +293,9 @@
                                 </div>
                             </a>
                             <a class="d-flex justify-content-between align-items-center py-3"
-                                href="brandingandidentity.html">
+                                href="contentstrategy.html">
                                 <div class="serv-btn">
-                                    <span>Social Media Marketing</span>
+                                    <span>Content Creation & Strategy</span>
                                 </div>
                                 <div>
                                     <ion-icon name="chevron-forward-outline"></ion-icon>
@@ -360,67 +378,64 @@
 
         <!-- CONTACT SECTION -->
         <section class="cuf">
-            <div class="contact1">
-                <div class="container cuf-box">
-                    <div class="row cuf-form">
-                        <div class="col-md-6 d-flex align-items-start justify-content-center">
-                            <div class="cuf-text">
-                                <p class="cuf-p1">why choose us</p>
-                                <h2>have any question?</h2>
-                                <h1>feel free to contact us</h1>
-                                <p class="cuf-p2">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Quod, nemo.
-                                </p>
-                                <p class="cuf-p3">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                    Autem quisquam est rerum corporis excepturi, commodi porro
-                                    quaerat vitae quod odio?
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <form class="contact1-form validate-form">
-                                <div class="wrap-input1 validate-input" data-validate="Name is required">
-                                    <input class="input1" type="text" name="name" placeholder="Full Name" />
-                                    <span class="shadow-input1"></span>
-                                </div>
-
-                                <div class="wrap-input1 validate-input"
-                                    data-validate="Valid email is required: ex@abc.xyz">
-                                    <input class="input1" type="text" name="email" placeholder="Email" />
-                                    <span class="shadow-input1"></span>
-                                </div>
-                                <div class="wrap-input1 validate-input"
-                                    data-validate="Valid phone number is required: ">
-                                    <input class="input1" type="text" name="phone" placeholder="Phone Number" />
-                                    <span class="shadow-input1"></span>
-                                </div>
-
-                                <div class="wrap-input1 validate-input" data-validate="Subject is required">
-                                    <input class="input1" type="text" name="subject" placeholder="Subject" />
-                                    <span class="shadow-input1"></span>
-                                </div>
-
-                                <div class="wrap-input1 wrap-textarea validate-input"
-                                    data-validate="Message is required">
-                                    <textarea class="input1" name="message" placeholder="Message"></textarea>
-                                    <span class="shadow-input1"></span>
-                                </div>
-
-                                <div class="container-contact1-form-btn">
-                                    <button class="form-btn">
-                                        Get started
-                                        <div class="icon">
-                                            <i class="fa fa-arrow-right"></i>
-                                        </div>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+          <div class="contact1">
+            <div class="container cuf-box">
+              <div class="row cuf-form">
+                <div class="col-md-6 d-flex align-items-start justify-content-center">
+                  <div class="cuf-text">
+                    <p class="cuf-p1">why choose us</p>
+                    <h2>have any question?</h2>
+                    <h1>feel free to contact us</h1>
+                    <p class="cuf-p2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quod, nemo.
+                    </p>
+                    <p class="cuf-p3">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Autem quisquam est rerum corporis excepturi, commodi porro
+                      quaerat vitae quod odio?
+                    </p>
+                  </div>
                 </div>
+                <div class="col-md-6">
+                  <form class="contact1-form validate-form" action="assets/config/code.php" method="POST">
+                    <div class="wrap-input1 validate-input" data-validate="Name is required">
+                      <input class="input1" type="text" name="name" placeholder="Full Name" />
+                      <span class="shadow-input1"></span>
+                    </div>
+    
+                    <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                      <input class="input1" type="text" name="email" placeholder="Email" />
+                      <span class="shadow-input1"></span>
+                    </div>
+                    <div class="wrap-input1 validate-input" data-validate="Valid phone number is required">
+                      <input class="input1" type="text" name="phone" placeholder="Phone Number" />
+                      <span class="shadow-input1"></span>
+                    </div>
+    
+                    <div class="wrap-input1 validate-input" data-validate="Subject is required">
+                      <input class="input1" type="text" name="subject" placeholder="Subject" />
+                      <span class="shadow-input1"></span>
+                    </div>
+    
+                    <div class="wrap-input1 wrap-textarea validate-input" data-validate="Message is required">
+                      <textarea class="input1" name="message" placeholder="Message"></textarea>
+                      <span class="shadow-input1"></span>
+                    </div>
+    
+                    <div class="container-contact1-form-btn">
+                      <button class="form-btn" id="submit_btn" name="submit_btn" type="submit">
+                        Get started
+                        <div class="icon">
+                          <i class="fa fa-arrow-right"></i>
+                        </div>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
+          </div>
         </section>
     </main>
 
@@ -498,7 +513,7 @@
                             <li>
                                 <a href="#service-home">OnlyFans Management</a>
                             </li>
-                            <li><a href="contentstrategy.html">Content Strategy & Creation</a></li>
+                            <li><a href="contentstrategy.html">Content Creation & Strategy</a></li>
                         </ul>
                     </div>
                     <div class="col-md-2 col-4 ufs-comp">

@@ -1,3 +1,9 @@
+
+window.addEventListener('load', function() {
+  const loader = document.getElementById('loader');
+  loader.classList.add('loaded');
+});
+// HEADER SLIDER
 var slideCount = document.querySelectorAll(".slider .slide-item").length;
 var slideWidth = document.querySelectorAll(".slider-outer")[0].offsetWidth;
 var slideHeight = document.querySelectorAll(".slider-outer")[0].offsetHeight;
@@ -41,6 +47,7 @@ function moveRight() {
   }
 }
 
+// TESTIMONIALS SLIDER
 $(document).ready(function () {
   $("#testimonial-slider").owlCarousel({
     items: 1,
@@ -54,6 +61,7 @@ $(document).ready(function () {
   });
 });
 
+// ON SCROLL ANIMATION
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
@@ -72,10 +80,9 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
+// FORM VALIDATION
 (function ($) {
   "use strict";
-  /*==================================================================
-  [ Validate ]*/
   var name = $('.validate-input input[name="name"]');
   var email = $('.validate-input input[name="email"]');
   var phone = $('.validate-input input[name="phone"]');
@@ -102,7 +109,12 @@ window.addEventListener("scroll", reveal);
       check = false;
     }
 
-    if ($(phone).val().trim() == "") {
+    if (
+      $(phone)
+        .val()
+        .trim()
+        .match(/^\d{10}$/) == null
+    ) {
       showValidate(phone);
       check = false;
     }
@@ -139,6 +151,7 @@ window.addEventListener("scroll", reveal);
   }
 })(jQuery);
 
+// SIDE BAR
 $(function () {
   "use strict";
 
