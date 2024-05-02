@@ -40,7 +40,7 @@
   --mail-color: #f2a60c;
   --facebook-color: #1778f2;
   --linkedin-color: #0077b5;
-  --instagram-color: #d62976;
+  --instagram-color: #1DA1F2;
   --instagram-bg-color: linear-gradient(45deg,
       #f09433 0%,
       #e6683c 25%,
@@ -198,34 +198,53 @@ iframe {
   position: fixed;
   top: 0;
   z-index: 99999;
-  background-color: #fff;
-}
-body.no-scroll {
-  overflow: hidden !important;
+  background-color: rgba(111, 111, 111, 0.6);
+  backdrop-filter: blur(15px);
 }
 .loaded {
   display: none !important;
 }
 
-.svgbox {
-  stroke-width: 8;
-  fill: none;
-  stroke-dasharray: 50, 14;
-  stroke-dashoffset: 192;
-  animation: dash_682 1.4s linear infinite;
+#outline {
+  stroke-dasharray: 2.42777px, 242.77666px;
+  stroke-dashoffset: 0;
+  -webkit-animation: anim 1.6s linear infinite;
+  animation: anim 1.6s linear infinite;
 }
 
-@keyframes dash_682 {
-  72.5% {
-    opacity: 1;
+@-webkit-keyframes anim {
+  12.5% {
+    stroke-dasharray: 33.98873px, 242.77666px;
+    stroke-dashoffset: -26.70543px;
   }
 
-  to {
-    stroke-dashoffset: 1;
+  43.75% {
+    stroke-dasharray: 84.97183px, 242.77666px;
+    stroke-dashoffset: -84.97183px;
+  }
+
+  100% {
+    stroke-dasharray: 2.42777px, 242.77666px;
+    stroke-dashoffset: -240.34889px;
   }
 }
 
+@keyframes anim {
+  12.5% {
+    stroke-dasharray: 33.98873px, 242.77666px;
+    stroke-dashoffset: -26.70543px;
+  }
 
+  43.75% {
+    stroke-dasharray: 84.97183px, 242.77666px;
+    stroke-dashoffset: -84.97183px;
+  }
+
+  100% {
+    stroke-dasharray: 2.42777px, 242.77666px;
+    stroke-dashoffset: -240.34889px;
+  }
+}
 
 /* CUSTOM BTNS */
 .custom-btn {
@@ -585,6 +604,14 @@ body.no-scroll {
 
 .social-s .social-link {
   color: var(--dark-color);
+}
+.social-s .social-link.insta {
+  color: var(--dark-color);
+}
+
+.social-link.insta {
+  font-size: 15px;
+  color: #d4d4d4;
 }
 
 .social-link {
@@ -2017,7 +2044,7 @@ textarea.input1+.shadow-input1 {
 .social-links .card:nth-child(3) .twitter {
   opacity: 0;
   transition: 0.2s ease-in-out;
-  fill: #03a9f4;
+  fill: #000;
 }
 
 .social-links .card:nth-child(4) {
@@ -2096,7 +2123,7 @@ textarea.input1+.shadow-input1 {
 }
 
 .social-links .card:nth-child(3):hover {
-  background-color: #03a9f4;
+  background-color: #000;
 }
 
 .social-links .card:nth-child(3):hover .twitter {

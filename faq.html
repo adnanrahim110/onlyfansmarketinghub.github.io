@@ -31,20 +31,20 @@
 <body>
     <!-- START LOADER -->
     <section id="loader">
-      <div class="loading">
-        <svg viewBox="0 0 187.3 93.7" height="200px" width="300px" class="svgbox">
-         <defs>
-           <linearGradient y2="0%" x2="100%" y1="0%" x1="0%" id="gradient">
-             <stop stop-color="pink" offset="0%"></stop>
-             
-                <stop stop-color="blue" offset="100%"></stop>
-           </linearGradient>
-         </defs>
-       
-         <path stroke="url(#gradient)" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"></path>
-       </svg>
-       
-       </div>
+        <svg style="left: 50%;
+          top: 50%;
+          position: absolute;
+          transform: translate(-50%, -50%) matrix(1, 0, 0, 1, 0, 0);" preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 187.3 93.7" height="300px" width="400px">
+            <path
+                d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"
+                stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" fill="none"
+                id="outline" stroke="#14b7e3"></path>
+            <path
+                d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"
+                stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#14b7e3"
+                fill="none" opacity="0.05" id="outline-bg"></path>
+        </svg>
     </section>
     <!-- END LOADER -->
     <main id="faq-home">
@@ -67,104 +67,110 @@
             </div>
             <!-- Navbar *** -->
             <nav class="navbar sticky navbar-expand-lg col-lg-12" id="bottomNav">
-              <div class="container-fluid">
-                <div class="mob-logo">
-                  <a class="navbar-brand" href="#"><img src="assets/images/Logo-02.png" alt="" /></a>
+                <div class="container-fluid">
+                    <div class="mob-logo">
+                        <a class="navbar-brand" href="#"><img src="assets/images/Logo-02.png" alt="" /></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav nav-1">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Our Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="brandingandidentity.html">Branding & Identity</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="onlyfansmanagement.html">Onlyfans Management</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="socialmediamarketing.html">Social Media
+                                            Marketing</a></li>
+                                    <li><a class="dropdown-item" href="contentstrategy.html">Content Creation &
+                                            Strategy</a></li>
+                                    <span class="drop-arrow"><ion-icon name="caret-down-outline"
+                                            class="drop-ico"></ion-icon></span>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about-us.html">About Us</a>
+                            </li>
+                        </ul>
+                        <div class="web-logo">
+                            <a class="navbar-brand" href="index.html"><img src="assets/images/Logo-02.png" alt="" /></a>
+                        </div>
+                        <ul class="navbar-nav nav-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html#testimonials">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#faq-home">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav nav-1">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Our Services
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="brandingandidentity.html">Branding & Identity</a></li>
-                        <li><a class="dropdown-item" href="onlyfansmanagement.html">Onlyfans Management</a></li>
-                        <li><a class="dropdown-item" href="socialmediamarketing.html">Social Media Marketing</a></li>
-                        <li><a class="dropdown-item" href="contentstrategy.html">Content Creation & Strategy</a></li>
-                        <span class="drop-arrow"><ion-icon name="caret-down-outline" class="drop-ico"></ion-icon></span>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about-us.html">About Us</a>
-                    </li>
-                  </ul>
-                  <div class="web-logo">
-                    <a class="navbar-brand" href="index.html"><img src="assets/images/Logo-02.png" alt="" /></a>
-                  </div>
-                  <ul class="navbar-nav nav-2">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html#testimonials">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#faq-home">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
             </nav>
             <!-- Mob Navbar -->
             <aside class="sidebar">
-              <div class="toggle">
-                <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
-                  <span></span>
-                </a>
-              </div>
-              <div class="side-inner">
-                <div class="profile">
-                  <img src="assets/images/Logo-02.png" alt="Image" class="img-fluid" />
+                <div class="toggle">
+                    <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+                        <span></span>
+                    </a>
                 </div>
-      
-                <div class="nav-menu">
-                  <ul>
-                    <li>
-                      <a href="index.html"><span class="icon-home mr-3"></span>Home</a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="icon-notifications mr-3"></span>
-                        our Services
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a href="brandingandidentity.html">Branding & Identity</a></li>
-                        <li><a href="onlyfansmanagement.html">Onlyfans Management</a></li>
-                        <li><a href="socialmediamarketing.html">Social Media Marketing</a></li>
-                        <li><a href="contentstrategy.html">Content Creation & Strategy</a></li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#testimonials"><span class="icon-location-arrow mr-3"></span>Testimonials</a>
-                    </li>
-                    <li>
-                      <a href="about-us.html"><span class="icon-pie-chart mr-3"></span>About Us</a>
-                    </li>
-                    <li>
-                      <a href="contact.html"><span class="icon-pie-chart mr-3"></span>Contact Us</a>
-                    </li>
-                    <li class="active">
-                      <a href="#faq-home"><span class="icon-sign-out mr-3"></span>F A Q</a>
-                    </li>
-                  </ul>
+                <div class="side-inner">
+                    <div class="profile">
+                        <img src="assets/images/Logo-02.png" alt="Image" class="img-fluid" />
+                    </div>
+
+                    <div class="nav-menu">
+                        <ul>
+                            <li>
+                                <a href="index.html"><span class="icon-home mr-3"></span>Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="icon-notifications mr-3"></span>
+                                    our Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="brandingandidentity.html">Branding & Identity</a></li>
+                                    <li><a href="onlyfansmanagement.html">Onlyfans Management</a></li>
+                                    <li><a href="socialmediamarketing.html">Social Media Marketing</a></li>
+                                    <li><a href="contentstrategy.html">Content Creation & Strategy</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#testimonials"><span class="icon-location-arrow mr-3"></span>Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="about-us.html"><span class="icon-pie-chart mr-3"></span>About Us</a>
+                            </li>
+                            <li>
+                                <a href="contact.html"><span class="icon-pie-chart mr-3"></span>Contact Us</a>
+                            </li>
+                            <li class="active">
+                                <a href="#faq-home"><span class="icon-sign-out mr-3"></span>F A Q</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
             </aside>
             <nav class="mob-navbar" id="mobNav">
-              <div class="mnb-logo">
-                <img src="assets/images/footer-logo.png" alt="">
-              </div>
+                <div class="mnb-logo">
+                    <img src="assets/images/footer-logo.png" alt="">
+                </div>
             </nav>
             <!-- Social Links Header *** -->
             <div class="social-box social-s" id="social">
                 <ul class="social row">
                     <li class="social-item col-4">
                         <a class="social-link insta" href="#">
-                            <ion-icon name="logo-instagram"></ion-icon>
+                            <i class="bi bi-twitter-x"></i>
                         </a>
                     </li>
                     <li class="social-item col-4">
@@ -204,11 +210,11 @@
                                         <div id="collapseOne" class="accordion-collapse collapse"
                                             data-bs-parent="#accordion">
                                             <div class="accordion-body">
-                                                Our agency works closely with content creators to develop 
-                                                customized marketing strategies tailored to their specific goals 
-                                                and target audience. We utilize a combination of social media 
-                                                promotion, influencer collaborations, targeted advertising, and 
-                                                content optimization to maximize exposure and drive growth on the 
+                                                Our agency works closely with content creators to develop
+                                                customized marketing strategies tailored to their specific goals
+                                                and target audience. We utilize a combination of social media
+                                                promotion, influencer collaborations, targeted advertising, and
+                                                content optimization to maximize exposure and drive growth on the
                                                 OnlyFans platform.
                                             </div>
                                         </div>
@@ -224,11 +230,11 @@
                                         <div id="collapseTwo" class="accordion-collapse collapse"
                                             data-bs-parent="#accordion">
                                             <div class="accordion-body">
-                                                The timeline for seeing results can vary depending on various 
-                                                factors such as the current state of your OnlyFans account, your 
-                                                niche, and the competitiveness of your market. However, many of our 
-                                                clients start to see noticeable improvements in subscriber counts 
-                                                and revenue within the first few weeks of implementing our 
+                                                The timeline for seeing results can vary depending on various
+                                                factors such as the current state of your OnlyFans account, your
+                                                niche, and the competitiveness of your market. However, many of our
+                                                clients start to see noticeable improvements in subscriber counts
+                                                and revenue within the first few weeks of implementing our
                                                 strategies.
                                             </div>
                                         </div>
@@ -244,9 +250,9 @@
                                         <div id="collapseThree" class="accordion-collapse collapse"
                                             data-bs-parent="#accordion">
                                             <div class="accordion-body">
-                                                Absolutely. We prioritize the privacy and security of our clients' 
-                                                information and content. Your account details and content will be 
-                                                handled with the utmost confidentiality, and we strictly adhere to 
+                                                Absolutely. We prioritize the privacy and security of our clients'
+                                                information and content. Your account details and content will be
+                                                handled with the utmost confidentiality, and we strictly adhere to
                                                 all privacy guidelines and regulations.
                                             </div>
                                         </div>
@@ -262,9 +268,9 @@
                                         <div id="collapseFour" class="accordion-collapse collapse"
                                             data-bs-parent="#accordion">
                                             <div class="accordion-body">
-                                                Our pricing is customized based on the specific needs and goals of 
-                                                each client. We offer flexible pricing options to accommodate 
-                                                various budgets and requirements. Get in touch with us for a 
+                                                Our pricing is customized based on the specific needs and goals of
+                                                each client. We offer flexible pricing options to accommodate
+                                                various budgets and requirements. Get in touch with us for a
                                                 personalized quote based on your individual needs.
                                             </div>
                                         </div>
@@ -274,13 +280,19 @@
                                             <button class="accordion-button collapsed" type="button"
                                                 data-bs-toggle="collapse" data-bs-target="#collapseFive"
                                                 aria-expanded="false" aria-controls="collapseFive">
-                                                Do I need a large following or existing fan base to benefit from your services?
+                                                Do I need a large following or existing fan base to benefit from your
+                                                services?
                                             </button>
                                         </h2>
                                         <div id="collapseFive" class="accordion-collapse collapse"
                                             data-bs-parent="#accordion">
                                             <div class="accordion-body">
-                                                Not necessarily. While having a pre-existing following can certainly help accelerate growth, our services are designed to benefit content creators at all stages of their journey – whether you're just starting out or looking to expand your audience. We'll work with you to develop strategies that align with your current situation and long-term goals.
+                                                Not necessarily. While having a pre-existing following
+                                                can certainly help accelerate growth, our services are designed to
+                                                benefit content creators at all stages of their journey – whether you're
+                                                just starting out or looking to expand your audience. We'll work with
+                                                you to develop strategies that align with your current situation and
+                                                long-term goals.
                                             </div>
                                         </div>
                                     </div>
@@ -295,7 +307,10 @@
                                         <div id="collapseSix" class="accordion-collapse collapse"
                                             data-bs-parent="#accordion">
                                             <div class="accordion-body">
-                                                We pride ourselves on our track record of delivering measurable growth and tangible results for our clients. Our team of experts will work tirelessly to develop and implement strategies that maximize your chances of success on the OnlyFans platform.
+                                                We pride ourselves on our track record of delivering measurable growth
+                                                and tangible results for our clients. Our team of experts will work
+                                                tirelessly to develop and implement strategies that maximize your
+                                                chances of success on the OnlyFans platform.
                                             </div>
                                         </div>
                                     </div>
@@ -310,7 +325,11 @@
                                         <div id="collapseSix" class="accordion-collapse collapse"
                                             data-bs-parent="#accordion">
                                             <div class="accordion-body">
-                                                Yes, absolutely. We believe in transparency and accountability, which is why we provide regular analytics and progress reports to keep you informed about the performance of your OnlyFans account. These reports will detail key metrics such as subscriber growth, revenue, engagement rates, and more.
+                                                Yes, absolutely. We believe in transparency and accountability, which is
+                                                why we provide regular analytics and progress reports to keep you
+                                                informed about the performance of your OnlyFans account. These reports
+                                                will detail key metrics such as subscriber growth, revenue, engagement
+                                                rates, and more.
                                             </div>
                                         </div>
                                     </div>
@@ -329,7 +348,7 @@
                                         <input class="input1" type="text" name="name" placeholder="Full Name" />
                                         <span class="shadow-input1"></span>
                                     </div>
-    
+
                                     <div class="wrap-input1 validate-input"
                                         data-validate="Valid email is required: ex@abc.xyz">
                                         <input class="input1" type="text" name="email" placeholder="Email" />
@@ -340,12 +359,12 @@
                                         <input class="input1" type="text" name="phone" placeholder="Phone Number" />
                                         <span class="shadow-input1"></span>
                                     </div>
-    
+
                                     <div class="wrap-input1 validate-input" data-validate="Message is required">
                                         <textarea class="input1" name="message" placeholder="Message"></textarea>
                                         <span class="shadow-input1"></span>
                                     </div>
-    
+
                                     <div class="container-contact1-form-btn">
                                         <button class="form-btn" id="submit_btn" name="submit_btn" type="submit">
                                             Get started
@@ -422,7 +441,8 @@
                     <div class="col-md-4 col-12 ufs-logo">
                         <a href="index.html" class="footer-logo"><img src="assets/images/footer-logo.png" alt="" /></a>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ex doloremque nobis architecto doloribus expedita possimus tenetur a explicabo atque!
+                            Time to level up your online game! OnlyFansMarketingHub: where your content 
+                            rules and your success rocks. Let's dive in and make waves together!
                         </p>
                     </div>
                     <div class="col-md-3 col-8 ufs-serv">
@@ -475,12 +495,9 @@
                                     </svg>
                                 </div>
                                 <div class="card">
-                                    <svg class="twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
-                                        width="35px" height="35px">
-                                        <path
-                                            d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429">
-                                        </path>
-                                    </svg>
+                                  <svg class="twitter" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                  </svg>
                                 </div>
                                 <div class="card">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="linkedin" width="30px" height="30px"
@@ -526,46 +543,47 @@
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            var $tickerWrapper = $(".ticker-wrapper");
-            var $list = $tickerWrapper.find("ul");
-            var listWidth = $list.outerWidth();
-            var $clonedList = $list.clone();
-
-            $clonedList.addClass("cloned").appendTo($tickerWrapper);
-
-            var infinite = new TimelineMax({ repeat: -1, paused: true });
-            var time = 15;
-
-            infinite
-                .fromTo($list, time, { rotation: 0.01, x: 0 }, { force3D: true, x: -listWidth, ease: Linear.easeNone }, 0)
-                .fromTo($clonedList, time, { rotation: 0.01, x: listWidth }, { force3D: true, x: 0, ease: Linear.easeNone }, 0)
-                .set($list, { force3D: true, rotation: 0.01, x: listWidth })
-                .to($clonedList, time, { force3D: true, rotation: 0.01, x: -listWidth, ease: Linear.easeNone }, time)
-                .to($list, time, { force3D: true, rotation: 0.01, x: 0, ease: Linear.easeNone }, time)
-                .progress(1).progress(0)
-                .play();
-
-            $tickerWrapper.on("mouseenter", function () {
-                infinite.pause();
-            }).on("mouseleave", function () {
-                infinite.play();
-            });
-        });
-    </script>
     <!-- STICKY NAVBAR -->
     <script>
-      const mobnav = document.getElementById("mobNav");
-  
-      window.addEventListener("scroll", () => {
-        if (window.scrollY > 100) {
-          mobnav.classList.add("sticknav");
-        } else {
-          mobnav.classList.remove("sticknav");
-        }
-      });
+        const mobnav = document.getElementById("mobNav");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 100) {
+                mobnav.classList.add("sticknav");
+            } else {
+                mobnav.classList.remove("sticknav");
+            }
+        });
+
+        // SIDE BAR
+        $(function () {
+            "use strict";
+
+            $(".js-menu-toggle").click(function (e) {
+                var $this = $(this);
+
+                if ($("body").hasClass("show-sidebar")) {
+                    $("body").removeClass("show-sidebar");
+                    $this.removeClass("active");
+                } else {
+                    $("body").addClass("show-sidebar");
+                    $this.addClass("active");
+                }
+
+                e.preventDefault();
+            });
+
+            // click outisde offcanvas
+            $(document).mouseup(function (e) {
+                var container = $(".sidebar");
+                if (!container.is(e.target) && container.has(e.target).length === 0) {
+                    if ($("body").hasClass("show-sidebar")) {
+                        $("body").removeClass("show-sidebar");
+                        $("body").find(".js-menu-toggle").removeClass("active");
+                    }
+                }
+            });
+        });
     </script>
 </body>
 
