@@ -518,7 +518,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1200px){
     p.col-md-9 {width: 100%;}
     .custom-btn.btn1 {margin-left: 0;}
-    .hiw-video {height: 100%;}
+    .hiw-video {height: 100dvh;}
     .hiw-video video {height: 100%;}
     .serv-right .wrapper {padding: 3rem 1rem 0 1rem;}
     .serv-overlay {left: 1rem; right: 1rem;}

@@ -319,7 +319,7 @@ iframe {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: var(--primary-font-family);
-  height: 350px;
+  height: 400px;
 }
 
 .home-banner {
@@ -935,14 +935,21 @@ main .post-content .post-meta {
 }
 
 .hiw-video {
-  height: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
 }
 
 .hiw-video video {
-  height: 100%;
-  width: 100%;
   object-fit: cover;
+  width: 80%;
+  height: 100%;
+  border-radius: 79% 21% 57% 43% / 19% 83% 17% 81% ;
+  filter: drop-shadow(10px 10px 10px rgba(20, 182, 227, 0.4));
+  backdrop-filter: blur(10px);
 }
+
 
 .hiw-text .custom-btn {
   margin-inline: 0;
@@ -952,14 +959,30 @@ main .post-content .post-meta {
 /* ts section */
 
 .ts {
-  padding-block: 4rem 7rem;
+  padding-block: 5rem 6rem;
+  position: relative;
+}
+.ts-overlay {
+  position: absolute;
+  z-index: -1;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+  url(../images/Testical\ banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .testimonial {
   padding: 60px 30px;
   margin: 120px 30px 50px 30px;
-  border: 1px solid var(--primary-color);
-  background-color: #fff;
+  border-radius: 84% 16% 84% 16% / 10% 85% 15% 90% ;
+  background-color: rgba(255, 255, 255, 0.03);
+  
+  backdrop-filter: blur(5px);
   position: relative;
   cursor: grab;
 }
@@ -984,7 +1007,7 @@ main .post-content .post-meta {
 
 .testimonial .description {
   font-size: 16px;
-  color: var(--dark-color);
+  color: #fff;
   line-height: 27px;
   text-align: center;
   padding-top: 20px;
@@ -996,7 +1019,7 @@ main .post-content .post-meta {
   font-weight: 700;
   font-size: 25px;
   margin-right: 5px;
-  color: var(--dark-color);
+  color: #fff;
 }
 
 .testimonial .title {
@@ -2187,16 +2210,17 @@ textarea.input1+.shadow-input1 {
   color: #fff;
   font-size: 4em;
   text-transform: capitalize;
-  text-align: center;
+  text-align: start;
 }
 
 .breadcrumb {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   text-align: center;
   color: var(--light-color);
   margin-top: 15px;
+  margin-left: 5px;
 }
 
 .breadcrumb a {
@@ -2492,7 +2516,7 @@ textarea.input1+.shadow-input1 {
 ------------------------------ */
 
 .about-banner {
-  background-image: linear-gradient(to bottom, rgba(11, 37, 46, 0.8), rgba(11, 37, 46, 0.8)),
+  background-image: linear-gradient(to bottom, rgba(11, 37, 46, 0.6), rgba(11, 37, 46, 0.6)),
     url(../images/about-bg.jpg);
 }
 
@@ -2603,7 +2627,7 @@ textarea.input1+.shadow-input1 {
 .section .text-outline {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: currentColor;
+  -webkit-text-stroke-color: var(--primary-color);
   font-weight: 700;
   font-size: 4.5rem;
 }

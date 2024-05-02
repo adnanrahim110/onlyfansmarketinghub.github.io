@@ -256,30 +256,42 @@
         </div>
       </div>
     </section>
-    <div class="section pt-0">
+    <div class="section pt-0" id="counter-box">
       <div class="container">
         <div class="row gy-5">
           <div class="col-6 col-lg-3">
-            <div class="text-center">
-              <div class="display-1 lh-1 text-outline pb-2">87K</div>
+            <div class="text-center counter-item">
+              <div class="display-1 pb-2 d-flex justify-content-center">
+                <div class="lh-1 text-outline counter" data-number="87"></div>
+                <div class=" lh-1 text-outline">K</div>
+              </div>
               <span class="h6">Project Completed</span>
             </div>
           </div>
           <div class="col-6 col-lg-3">
-            <div class="text-center">
-              <div class="display-1 lh-1 text-outline pb-2">100K</div>
+            <div class="text-center counter-item">
+              <div class="display-1 pb-2 d-flex justify-content-center">
+                <div class="lh-1 text-outline counter" data-number="87"></div>
+                <div class=" lh-1 text-outline">K</div>
+              </div>
               <span class="h6">Project Completed</span>
             </div>
           </div>
           <div class="col-6 col-lg-3">
-            <div class="text-center">
-              <div class="display-1 lh-1 text-outline pb-2">15+</div>
+            <div class="text-center counter-item">
+              <div class="display-1 pb-2 d-flex justify-content-center">
+                <div class="lh-1 text-outline counter" data-number="87"></div>
+                <div class=" lh-1 text-outline">+</div>
+              </div>
               <span class="h6">Project Completed</span>
             </div>
           </div>
           <div class="col-6 col-lg-3">
-            <div class="text-center">
-              <div class="display-1 lh-1 text-outline pb-2">32K</div>
+            <div class="text-center counter-item">
+              <div class="display-1 pb-2 d-flex justify-content-center">
+                <div class="lh-1 text-outline counter" data-number="87"></div>
+                <div class=" lh-1 text-outline">K</div>
+              </div>
               <span class="h6">Project Completed</span>
             </div>
           </div>
@@ -349,7 +361,7 @@
           <div class="col-12 col-lg-4 serv-left">
             <h1>Services We Offer</h1>
             <p>
-              Elevate your online presence with OnlyFansMarketingHub: Your go-to for expert branding, 
+              Elevate your online presence with OnlyFansMarketingHub: Your go-to for expert branding,
               dynamic social media marketing, captivating content creation, and seamless OnlyFans management.
             </p>
           </div>
@@ -609,6 +621,45 @@
   <script src="assets/js/aos.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+  <!-- COUNTER -->
+  <script>
+    var a = 0;
+    $(window).scroll(function () {
+      var oTop = $("#counter-box").offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > 700) {
+        $(".counter").each(function () {
+          var $this = $(this),
+            countTo = $this.attr("data-number");
+          $({
+            countNum: $this.text()
+          }).animate(
+            {
+              countNum: countTo
+            },
+
+            {
+              duration: 850,
+              easing: "swing",
+              step: function () {
+                //$this.text(Math.ceil(this.countNum));
+                $this.text(
+                  Math.ceil(this.countNum).toLocaleString("en")
+                );
+              },
+              complete: function () {
+                $this.text(
+                  Math.ceil(this.countNum).toLocaleString("en")
+                );
+                //alert('finished');
+              }
+            }
+          );
+        });
+        a = 1;
+      }
+    });
+  </script>
 
   <!-- STICKY NAVBAR -->
   <script>
