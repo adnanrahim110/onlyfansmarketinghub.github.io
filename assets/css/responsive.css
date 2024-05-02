@@ -383,11 +383,13 @@
     .cta-inner hr {margin: .5rem 0;}
     .cta-info {margin-bottom: 10px; padding-inline: 0;}
     .cta-info h2 {font-size: 24px; text-align: center; margin-bottom: 15px;}
-    .cta-info-1 {flex-wrap: wrap; padding-right: 0;}
+    .cta-info-1 {flex-wrap: wrap; padding-right: 0; font-size: 14px;}
+    .cta-info-1 a {justify-content: center; align-items: center;}
+    .cta-info-1 p {justify-content: center; align-items: center;}
     .cta-info-1 .ph {margin-right: 20px; }
     .cta-info-1 .ma {margin-right: 0; }
-    .cta-info-1 .add { margin-top: 5px;}
-    .cta-loc {margin-top: 10px;}
+    .cta-info-1 .add { margin-top: 5px; font-size: 12px;}
+    .cta-loc {margin-top: 5px;}
     .ufs-logo {margin-bottom: 40px;  padding-inline: 0; text-align: center;}
     .footer-logo img {height: 80px; width: 300px;}
     .ufs-logo p {padding-inline: 0; text-align: center;}
@@ -441,10 +443,11 @@
     .cta-info h2 {font-size: 16px;}
     .footer-cta {font-size: 12px; padding: 10px 20px;}
     .second {margin-left: 12px;}
-    .cta-info-1 {padding-right: 15px;}
-    .cta-info-1 .ph {margin-right: 10px; font-size: 12px;}
-    .cta-info-1 .ma {margin-right: 10px; font-size: 12px;}
-    .cta-info-1 .add {font-size: 12px;}
+    .cta-info-1 {padding-right: 15px; font-size: 10px;}
+    .cta-info-1 .ph {margin-right: 10px;}
+    .cta-info-1 .ma {margin-right: 10px;}
+    .cta-info-1 .add {font-size: 9px;}
+    .cta-loc,.cta-mail,.cta-call {font-size: 12px;}
     .ufs-logo {padding-right: 1rem;}
     .ufs-logo img {width: 220px; height: 60px;}
     .ufs-social.ps-md-5 {padding-left: 1rem !important;}
@@ -460,14 +463,6 @@
     .service-item p {font-size: .7rem;}
     .service-item span {font-size: .7rem;}
     .row.pt-3 {padding-top: 0 !important;}
-}
-@media only screen and (min-width: 992px) and (max-width: 1200px){
-    p.col-md-9 {width: 100%;}
-    .custom-btn.btn1 {margin-left: 0;}
-    .hiw-video {height: 100%;}
-    .hiw-video video {height: 100%;}
-    .serv-right .wrapper {padding: 3rem 1rem 0 1rem;}
-    .serv-overlay {left: 1rem; right: 1rem;}
 }
 @media only screen and (max-width: 768px) {
     .hiw-video {display: none;}
@@ -487,7 +482,6 @@
     #open-menu{display: none;}
     .small-serv-btns {display: none;}
 }
-
 @media only screen and (min-width: 992px) and (max-width: 1123px) {
     .nav-link {font-size: 11px;}
     .nav-2 {margin-left: 20px;}
@@ -520,4 +514,14 @@
     .accordion {margin-top: 20px;}
     .accordion-body {font-size: 13px;}
     .accordion-button {padding-block: .95rem;}
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    p.col-md-9 {width: 100%;}
+    .custom-btn.btn1 {margin-left: 0;}
+    .hiw-video {height: 100%;}
+    .hiw-video video {height: 100%;}
+    .serv-right .wrapper {padding: 3rem 1rem 0 1rem;}
+    .serv-overlay {left: 1rem; right: 1rem;}
+    .cta-info-1 {font-size: 12px;}
+    .cta-info-1 .add {font-size: 11px;}
 }

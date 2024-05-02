@@ -1939,19 +1939,20 @@ textarea.input1+.shadow-input1 {
 
 .cta-info-1 {
   margin-left: -10px;
-  padding-right: 30px;
+  padding-right: 10px;
+  font-size: 15px;
 }
 
 .cta-info-1 .ph {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .cta-info-1 .ma {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .cta-info-1 .add {
-  font-size: 15px;
+  font-size: 14px;
   color: #fff;
 }
 
