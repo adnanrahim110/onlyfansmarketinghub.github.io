@@ -981,8 +981,9 @@ main .post-content .post-meta {
   margin: 120px 30px 50px 30px;
   border-radius: 84% 16% 84% 16% / 10% 85% 15% 90% ;
   background-color: rgba(255, 255, 255, 0.03);
-  
   backdrop-filter: blur(5px);
+  border-top: 5px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 2px 5px  rgba(255, 255, 255, 0.4);
   position: relative;
   cursor: grab;
 }
@@ -1105,21 +1106,27 @@ main .post-content .post-meta {
 }
 
 .serv-left {
-  background-color: var(--primary-color);
-  padding: 8rem 6rem 0 3rem;
+  background-image: linear-gradient(to bottom, rgba(8, 46, 64, 0.6) 50%, rgba(20, 182, 227, 0.5)), 
+  url(../images/ser-left.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 12rem 4rem 0 3rem;
+  color: #979797;
 }
 
 .serv-left h1 {
   font-size: 55px;
   margin-bottom: 20px;
-  color: #000;
+  color: #d1d1d1;
 }
 
 .serv-right .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0;
-  padding: 3rem 3rem 0 3rem;
+  padding: 3rem;
+  padding-bottom: 0;
   position: relative;
 }
 
@@ -1143,7 +1150,7 @@ main .post-content .post-meta {
   padding: 35px;
   position: relative;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 2;
   transition: all .5s linear;
   cursor: pointer;
@@ -1496,16 +1503,28 @@ main .post-content .post-meta {
   display: grid;
   grid-template-columns: 5;
   grid-template-rows: 3;
-  grid-gap: 20px;
+  grid-row-gap: 5px;
+  transition: all 1s ease;
 }
 
 .pps-item {
+  --dark-gradient: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.1));
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 310px;
+  transition: all .3s linear;
+  border-radius: 95% 5% 96% 4% / 6% 100% 0% 94% ;
+}
+
+.pps-wrapper:hover .pps-item:not(:hover) {
+  --dark-gradient: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+}
+
+.pps-item:hover {
+  --dark-gradient: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
 }
 
 .pps-overlay {
@@ -1514,13 +1533,14 @@ main .post-content .post-meta {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(20, 182, 227, 0.6);
+  background-color: rgba(20, 182, 227, 0.4);
   color: #fff;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   -ms-transition: all 500ms;
   -o-transition: all 500ms;
   transition: all 500ms;
+  transition: all .3s linear;
 }
 
 .pps-item:hover .pps-overlay {
@@ -1528,37 +1548,37 @@ main .post-content .post-meta {
 }
 
 .pps-i1 {
-  background-image: url(../images/pi1.jpg);
+  background-image: var(--dark-gradient), url(../images/pi1.jpg);
   grid-row: 1/2;
   grid-column: 1/3;
 }
 
 .pps-i2 {
-  background-image: url(../images/pi2.jpg);
+  background-image: var(--dark-gradient), url(../images/pi2.jpg);
   grid-row: 1/2;
   grid-column: 3/4;
 }
 
 .pps-i3 {
-  background-image: url(../images/pi3.jpg);
+  background-image: var(--dark-gradient), url(../images/pi3.jpg);
   grid-row: 1/2;
   grid-column: 4/5;
 }
 
 .pps-i4 {
-  background-image: url(../images/pi4.jpg);
+  background-image: var(--dark-gradient), url(../images/pi4.png);
   grid-row: 2/3;
   grid-column: 1/2;
 }
 
 .pps-i5 {
-  background-image: url(../images/pi5.jpg);
+  background-image: var(--dark-gradient), url(../images/pi5.jpg);
   grid-row: 2/3;
   grid-column: 2/3;
 }
 
 .pps-i6 {
-  background-image: url(../images/pi6.jpg);
+  background-image: var(--dark-gradient), url(../images/pi6.jpg);
   grid-row: 2/3;
   grid-column: 3/5;
 }
@@ -1886,7 +1906,7 @@ textarea.input1+.shadow-input1 {
 
 .ufs {
   height: 100%;
-  background-color: var(--dark-color);
+  background-color: rgba(0, 0, 0, 0.84);
   margin-top: 10rem;
   color: #666873;
 }
@@ -2361,12 +2381,36 @@ textarea.input1+.shadow-input1 {
 
 
 /* -----------------------------
-          BRANDING PAGE
+          SERVICE PAGE
 ------------------------------ */
+
+#our-services {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+      url(../images/body-bg2.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+#our-services .cuf-form {
+  background-color: rgba(20, 182, 227, 0.6);
+}
 
 .brand-banner {
   background-image: linear-gradient(to bottom, rgba(11, 37, 46, 0.8), rgba(11, 37, 46, 0.8)),
     url(../images/brand-bg.jpg);
+}
+.of-banner {
+  background-image: linear-gradient(to bottom, rgba(11, 37, 46, 0.8), rgba(11, 37, 46, 0.8)),
+    url(../images/of-bg.jpg);
+}
+.content-banner {
+  background-image: linear-gradient(to bottom, rgba(11, 37, 46, 0.8), rgba(11, 37, 46, 0.8)),
+    url(../images/content-bg.jpg);
+}
+.social-banner {
+  background-image: linear-gradient(to bottom, rgba(11, 37, 46, 0.8), rgba(11, 37, 46, 0.8)),
+    url(../images/social-bg.jpg);
 }
 
 .service-main {
@@ -2384,8 +2428,14 @@ textarea.input1+.shadow-input1 {
 }
 
 .service-item {
-  margin-top: 5.6rem;
-  padding: 0 2rem;
+  padding-top: 5.6rem;
+  padding-inline: 2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.serv-banner img {
+  border-radius: 67% 2% 100% 3% / 9% 100% 6% 0% ;
+  border: 10px solid var(--instagram-bg-color);
 }
 
 .services-btns a {
@@ -2446,11 +2496,13 @@ textarea.input1+.shadow-input1 {
 
 .service-item h3 {
   margin-bottom: .5rem;
+  color: #000;
 }
 
 .service-item p {
   margin-bottom: 1rem;
   font-size: .9rem;
+  color: #000000;
 }
 
 .service-item span {
@@ -2464,6 +2516,10 @@ textarea.input1+.shadow-input1 {
 
 .service-item .accordion-body {
   font-size: .9rem;
+}
+
+.service-item .container:nth-child(3) .col-md-5 img {
+  border-radius: 0% 100% 11% 0% / 0% 5% 100% 60% !important;
 }
 
 .text-primary {

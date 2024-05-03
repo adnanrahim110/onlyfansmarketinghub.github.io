@@ -69,7 +69,7 @@
     .wwd-title3 h2 {font-size: 2.5rem; -webkit-text-stroke: 2px #383838;}
     .wwd-title3 h2 span {-webkit-text-stroke: 2px #bfbfbf;}
     .pps-wrapper {margin-top: 10px; grid-gap: 5px; grid-template-columns: 1fr; grid-template-rows: 7;}
-    .pps-item {height: 220px;}
+    .pps-item {height: 220px; border-radius: 100% 0% 96% 4% / 3% 100% 0% 97% ;}
     .pps-i1 {grid-column: 1/2; grid-row: 1/2;}.pps-i2 {grid-column: 1/2; grid-row: 2/3;}
     .pps-i3 {grid-column: 1/2; grid-row: 3/4;}.pps-i4 {grid-column: 1/2; grid-row: 4/5;}
     .pps-i5 {grid-column: 1/2; grid-row: 5/6;}.pps-i6 {grid-column: 1/2; grid-row: 6/7;}
@@ -120,14 +120,18 @@
     .small-serv-btns a.py-3 {padding-block: .6rem !important;}
     .row.pb-5 {padding-bottom: 1rem !important;}
     .row.pt-3 {padding-top: 0 !important;}
+    .service-item {padding: 0 1rem;}
     .service-item h3 {font-size: 20px;}
-    .service-item p{ font-size: .6rem;}
-    .service-item span {font-size: .6rem;}
+    .service-item p{ font-size: .8rem;}
+    .service-item span {font-size: .8rem;}
     .service-item .accordion-body {font-size: .6rem;}
     .accordion-header .accordion-button {font-size: 12px;}
     .accordion-header .accordion-button.py-4 {padding-block: 1rem !important;}
     .accordion-button::after {padding-left: 10px;}
     p.fw-bolder {font-size: 1rem;}
+    .section h5 {font-size: .9rem;}
+    .ab-of {padding-left: 3px !important;}
+    .ab-of h5 {font-size: .7rem !important;}
 }
 @media only screen and (min-width: 400px) and (max-width: 480px){
     .wwd { padding-block: 1rem 3rem;}
@@ -162,12 +166,12 @@
     .wwd-title3 h2 {font-size: 1.8rem; line-height: .9; -webkit-text-stroke: 2px #383838;}
     .wwd-title3 h2 span {-webkit-text-stroke: 1.5px #979797;}
     .pps-wrapper {margin-top: 15px; grid-gap: 10px;}
-    .pps-i1 {grid-column: 1/3; grid-row: 1/2;}
+    .pps-i1 {grid-column: 1/3; grid-row: 1/2; border-radius: 100% 0% 96% 4% / 3% 100% 0% 97%;}
     .pps-i2 {grid-column: 1/2; grid-row: 2/3;}
     .pps-i3 {grid-column: 2/3; grid-row: 2/3;}
     .pps-i4 {grid-column: 1/2; grid-row: 3/4;}
     .pps-i5 {grid-column: 2/3; grid-row: 3/4;}
-    .pps-i6 {grid-column: 1/3; grid-row: 4/5;}
+    .pps-i6 {grid-column: 1/3; grid-row: 4/5; border-radius: 100% 0% 96% 4% / 3% 100% 0% 97%;}
     .cuf-form {padding-block: 2rem;}
     .cuf-text {padding: 0 1rem 2rem 1rem;}
     .cuf-text h2 {font-size: 30px;}
@@ -242,6 +246,8 @@
     .accordion-header .accordion-button.py-4 {padding-block: 1rem !important;}
     .accordion-button::after {padding-left: 10px;}
     p.fw-bolder {font-size: 1rem;}
+    .section h5 {font-size: .9rem;}
+    .ab-of {padding-left: 3px !important;}
 }
 @media only screen and (min-width: 481px) and (max-width: 600px){
     .home-banner .content {padding-inline: 1rem;}
@@ -463,6 +469,8 @@
     .service-item p {font-size: .7rem;}
     .service-item span {font-size: .7rem;}
     .row.pt-3 {padding-top: 0 !important;}
+    .service-item .container:nth-child(3) .col-md-5 {display: flex; align-items: center; justify-content: center;}
+    .service-item .container:nth-child(3) .col-md-5.p-5 {padding: 0 !important;}
 }
 @media only screen and (max-width: 768px) {
     .hiw-video {display: none;}
@@ -524,4 +532,6 @@
     .serv-overlay {left: 1rem; right: 1rem;}
     .cta-info-1 {font-size: 12px;}
     .cta-info-1 .add {font-size: 11px;}
+    .service-item .container:nth-child(3) .col-md-5 {display: flex; align-items: center; justify-content: center;}
+    .service-item .container:nth-child(3) .col-md-5.p-5 {padding: 0 !important;}
 }
