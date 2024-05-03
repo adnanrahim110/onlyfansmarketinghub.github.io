@@ -201,6 +201,7 @@ iframe {
   background-color: rgba(111, 111, 111, 0.6);
   backdrop-filter: blur(15px);
 }
+
 .loaded {
   display: none !important;
 }
@@ -605,6 +606,7 @@ iframe {
 .social-s .social-link {
   color: var(--dark-color);
 }
+
 .social-s .social-link.insta {
   color: var(--dark-color);
 }
@@ -945,7 +947,7 @@ main .post-content .post-meta {
   object-fit: cover;
   width: 80%;
   height: 100%;
-  border-radius: 79% 21% 57% 43% / 19% 83% 17% 81% ;
+  border-radius: 79% 21% 57% 43% / 19% 83% 17% 81%;
   filter: drop-shadow(10px 10px 10px rgba(20, 182, 227, 0.4));
   backdrop-filter: blur(10px);
 }
@@ -962,11 +964,12 @@ main .post-content .post-meta {
   padding-block: 5rem 6rem;
   position: relative;
 }
+
 .ts-overlay {
   position: absolute;
-  z-index: -1;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-  url(../images/Testical\ banner.jpg);
+  z-index: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/Testical-banner.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -979,11 +982,11 @@ main .post-content .post-meta {
 .testimonial {
   padding: 60px 30px;
   margin: 120px 30px 50px 30px;
-  border-radius: 84% 16% 84% 16% / 10% 85% 15% 90% ;
+  border-radius: 84% 16% 84% 16% / 10% 85% 15% 90%;
   background-color: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(5px);
   border-top: 5px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 2px 5px  rgba(255, 255, 255, 0.4);
+  box-shadow: 2px 5px rgba(255, 255, 255, 0.4);
   position: relative;
   cursor: grab;
 }
@@ -1073,7 +1076,7 @@ main .post-content .post-meta {
   content: "\1F894";
   font-weight: 700;
   font-size: 40px;
-  color: #000;
+  color: #fff;
   opacity: 1;
 }
 
@@ -1106,8 +1109,8 @@ main .post-content .post-meta {
 }
 
 .serv-left {
-  background-image: linear-gradient(to bottom, rgba(8, 46, 64, 0.6) 50%, rgba(20, 182, 227, 0.5)), 
-  url(../images/ser-left.jpg);
+  background-image: linear-gradient(to bottom, rgba(8, 46, 64, 0.6) 50%, rgba(20, 182, 227, 0.5)),
+    url(../images/ser-left.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1508,7 +1511,7 @@ main .post-content .post-meta {
 }
 
 .pps-item {
-  --dark-gradient: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.1));
+  --dark-gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -1516,15 +1519,15 @@ main .post-content .post-meta {
   background-size: cover;
   height: 310px;
   transition: all .3s linear;
-  border-radius: 95% 5% 96% 4% / 6% 100% 0% 94% ;
+  border-radius: 95% 5% 96% 4% / 6% 100% 0% 94%;
 }
 
 .pps-wrapper:hover .pps-item:not(:hover) {
-  --dark-gradient: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+  --dark-gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
 
 .pps-item:hover {
-  --dark-gradient: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+  --dark-gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
 
 .pps-overlay {
@@ -2386,10 +2389,10 @@ textarea.input1+.shadow-input1 {
 
 #our-services {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
-      url(../images/body-bg2.jpg);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+    url(../images/body-bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #our-services .cuf-form {
@@ -2400,14 +2403,17 @@ textarea.input1+.shadow-input1 {
   background-image: linear-gradient(to bottom, rgba(11, 37, 46, 0.8), rgba(11, 37, 46, 0.8)),
     url(../images/brand-bg.jpg);
 }
+
 .of-banner {
   background-image: linear-gradient(to bottom, rgba(11, 37, 46, 0.8), rgba(11, 37, 46, 0.8)),
     url(../images/of-bg.jpg);
 }
+
 .content-banner {
   background-image: linear-gradient(to bottom, rgba(11, 37, 46, 0.8), rgba(11, 37, 46, 0.8)),
     url(../images/content-bg.jpg);
 }
+
 .social-banner {
   background-image: linear-gradient(to bottom, rgba(11, 37, 46, 0.8), rgba(11, 37, 46, 0.8)),
     url(../images/social-bg.jpg);
@@ -2434,7 +2440,7 @@ textarea.input1+.shadow-input1 {
 }
 
 .serv-banner img {
-  border-radius: 67% 2% 100% 3% / 9% 100% 6% 0% ;
+  border-radius: 67% 2% 100% 3% / 9% 100% 6% 0%;
   border: 10px solid var(--instagram-bg-color);
 }
 
