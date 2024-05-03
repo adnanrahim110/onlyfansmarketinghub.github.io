@@ -1,5 +1,13 @@
 @media only screen and (min-width: 320px) and (max-width: 399px){
     .home-banner .content {padding-inline: 15px; margin-top: 70px;}
+    #hb-slide1 {background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url(../images/sm-home1.jpg);}
+    #hb-slide2 {background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url(../images/sm-home2.jpg);}
+    #hb-slide3 {background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url(../images/sm-home3.jpg);}
+    #hb-slide4 {background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url(../images/sm-home4.jpg);}
     .main-text .content .text h2 { font-size: 23px;}
     .main-text .content .text p {font-size: 13px;}
     .custom-btn.btn1 {margin-bottom: 20px;}
@@ -21,7 +29,8 @@
     .testimonial .pic {height: 80px; width: 80px;}
     .testimonial .description {font-size: 12px;}
     .owl-theme .owl-controls .owl-buttons div {width: 30px; height: 30px;}
-    .serv-left {padding: 2rem; text-align: center;}
+    .serv-left {padding: 2rem; text-align: center; background-image: linear-gradient(to bottom, rgba(8, 46, 64, 0.6) 50%, rgba(20, 182, 227, 0.5)),
+        url(../images/sm-serv-left.jpg);}
     .serv-left h1 {font-size: 40px;}
     .serv-left p {font-size: 13px;}
     .serv-right .serv-text h3 {font-size: 22px;}
@@ -138,6 +147,14 @@
     .wwd-title {margin-bottom: -15px;}
     .wwd-title h2 {font-size: 3rem; line-height: .8;}
     .wwd-content .col-md-3 {padding: 10px 11px;}
+    #hb-slide1 {background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url(../images/sm-home1.jpg);}
+    #hb-slide2 {background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url(../images/sm-home2.jpg);}
+    #hb-slide3 {background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url(../images/sm-home3.jpg);}
+    #hb-slide4 {background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url(../images/sm-home4.jpg);}
     .hiw-text {padding: 20px 20px 0 20px; margin-block: 20px;}
     .hiw-title h2 {font-size: 25px;}
     .hiw-text p {font-size: 12px;}
@@ -208,7 +225,8 @@
     .ufs-copy {text-align: center; padding-inline: 20px; margin-bottom: 10px;}
     .ufs-copyright {font-size: 11px;}
     .ufs-terms a {margin-inline: 5px; font-size: 9px;}
-    .serv-left {padding: 2rem; text-align: center;}
+    .serv-left {padding: 2rem; text-align: center; background-image: linear-gradient(to bottom, rgba(8, 46, 64, 0.6) 50%, rgba(20, 182, 227, 0.5)),
+        url(../images/sm-serv-left.jpg);}
     .serv-left h1 {font-size: 30px; margin-bottom: 10px;}
     .serv-left p { font-size: 14px;}
     .serv-right .serv-text h3 {font-size: 22px;}
@@ -471,6 +489,8 @@
     .row.pt-3 {padding-top: 0 !important;}
     .service-item .container:nth-child(3) .col-md-5 {display: flex; align-items: center; justify-content: center;}
     .service-item .container:nth-child(3) .col-md-5.p-5 {padding: 0 !important;}
+    .hiw-video {height: 80dvh;}
+    .hiw-video video {width: 90%; height: 90%;}
 }
 @media only screen and (max-width: 768px) {
     .hiw-video {display: none;}
@@ -483,6 +503,8 @@
     .social-box { display: none;}
     .serv-overlay {display: none;}
     .services-btns {display: none;}
+    .serv-left{ background-image: linear-gradient(to bottom, rgba(8, 46, 64, 0.6) 50%, rgba(20, 182, 227, 0.5)),
+        url(../images/sm-serv-left.jpg);}
 }
 @media only screen and (min-width: 992px) {
     .sidebar {display: none;}
@@ -522,12 +544,16 @@
     .accordion {margin-top: 20px;}
     .accordion-body {font-size: 13px;}
     .accordion-button {padding-block: .95rem;}
+    .hiw-video {height: 90dvh;}
+    .hiw-video video {width: 90%; height: 100%;}
+}
+@media only screen and (min-width: 1124px) and (max-width: 1200px){
+    .hiw-video {height: 90dvh;}
+    .hiw-video video {width: 60%; height: 100%;}
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px){
     p.col-md-9 {width: 100%;}
     .custom-btn.btn1 {margin-left: 0;}
-    .hiw-video {height: 100dvh;}
-    .hiw-video video {height: 100%;}
     .serv-right .wrapper {padding: 3rem 1rem 0 1rem;}
     .serv-overlay {left: 1rem; right: 1rem;}
     .cta-info-1 {font-size: 12px;}
