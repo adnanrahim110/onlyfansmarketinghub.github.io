@@ -937,6 +937,7 @@ main .post-content .post-meta {
 }
 
 .hiw-video {
+  position: relative;
   height: 100dvh;
   display: flex;
   justify-content: center;
@@ -948,10 +949,18 @@ main .post-content .post-meta {
   width: 80%;
   height: 100%;
   border-radius: 79% 21% 57% 43% / 19% 83% 17% 81%;
-  filter: drop-shadow(10px 10px 10px rgba(20, 182, 227, 0.4));
+  filter: drop-shadow(10px 10px 10px rgba(20, 182, 227, 0.4)) brightness(40%) blur(2px);
   backdrop-filter: blur(10px);
 }
 
+.hiw-lock {
+  position: absolute;
+  color: var(--primary-color);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5rem;
+}
 
 .hiw-text .custom-btn {
   margin-inline: 0;
