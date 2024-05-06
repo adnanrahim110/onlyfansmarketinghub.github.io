@@ -668,17 +668,18 @@ iframe {
 }
 
 .mnb-logo {
-  padding: 10px;
+  padding: 30px 10px 0 10px;
 }
 
 .mnb-logo img {
-  width: 190px;
+  width: 180px;
   height: auto;
 }
 
 .mob-navbar {
   width: 100%;
-  height: 70px;
+  height: 90px;
+  top: 0;
   background-color: transparent;
   position: fixed;
   display: flex;
@@ -714,7 +715,7 @@ aside {
 
 aside .toggle {
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 35px;
   position: absolute;
   right: 0;
   -webkit-transform: translateX(100%);
@@ -970,6 +971,10 @@ main .post-content .post-meta {
   height: 100%;
   border-radius: 79% 21% 57% 43% / 19% 83% 17% 81%;
   filter: brightness(40%) blur(2px);
+  -webkit-filter: brightness(40%) blur(2px);
+  -moz-filter: brightness(40%) blur(2px);
+  -ms-filter: brightness(40%) blur(2px);
+  -o-filter: brightness(40%) blur(2px);
 }
 
 .hiw-lock {
