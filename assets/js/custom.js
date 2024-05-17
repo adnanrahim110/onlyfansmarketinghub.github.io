@@ -113,7 +113,7 @@ window.addEventListener("scroll", reveal);
       $(phone)
         .val()
         .trim()
-        .match(/^\d{10}$/) == null
+        .match(/^\d{15}$/) == null
     ) {
       showValidate(phone);
       check = false;

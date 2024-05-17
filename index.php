@@ -42,7 +42,7 @@ include "includes/header.php";
             </p>
           </div>
           <div class="start-btns">
-            <a href="contact.php#contactForm">
+            <a href="contact#contactForm">
               <button class="custom-btn btn1">Get Started</button>
             </a>
             <a href="tel:+13464694462">
@@ -83,7 +83,7 @@ include "includes/header.php";
             track record of success and unwavering dedication to client satisfaction, we are confident in our
             ability to empower you to thrive as a prominent presence within the dynamic world of digital media.
           </p>
-          <a href="contact.php#contactForm">
+          <a href="contact#contactForm">
             <button class="custom-btn">get started</button>
           </a>
         </div>
@@ -305,7 +305,7 @@ include "includes/header.php";
           </h3>
         </div>
         <div class="col-md-4 d-flex align-items-start justify-content-center ps-0 pe-md-4">
-          <a class="btn-cta" href="contact.php?#contactForm">
+          <a class="btn-cta" href="contact?#contactForm">
             <span class="span">start onlyfans</span>
             <span class="second">
               <svg width="50px" height="20px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

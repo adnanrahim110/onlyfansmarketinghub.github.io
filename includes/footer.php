@@ -8,7 +8,7 @@
                 <h2>Join us to elevate your content to new heights. </h2>
               </div>
               <div class="col-md-4 d-flex justify-content-center align-items-center">
-                <a class="btn-cta footer-cta" href="contact.php?#contactForm">
+                <a class="btn-cta footer-cta" href="contact?#contactForm">
                   <span class="span">start onlyfans</span>
                   <span class="second">
                     <svg width="50px" height="20px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@
         </div>
         <div class="row container-fluid footer-text">
           <div class="col-md-4 col-12 ufs-logo">
-            <a href="index.php" class="footer-logo"><img src="assets/images/footer-logo.png" alt="" /></a>
+            <a href="index" class="footer-logo"><img src="assets/images/footer-logo.png" alt="" /></a>
             <p>
               Time to level up your online game! OnlyFansMarketingHub: where your content
               rules and your success rocks. Let's dive in and make waves together!
@@ -57,23 +57,23 @@
           <div class="col-md-3 col-8 ufs-serv">
             <h3>Services</h3>
             <ul class="list-unstyled links">
-              <li><a href="brandingandidentity.php">Branding & Identity</a></li>
+              <li><a href="brandingandidentity">Branding & Identity</a></li>
               <li>
-                <a href="socialmediamarketing.php">Social Media Marketing</a>
+                <a href="socialmediamarketing">Social Media Marketing</a>
               </li>
               <li>
-                <a href="onlyfansmanagement.php">OnlyFans Management</a>
+                <a href="onlyfansmanagement">OnlyFans Management</a>
               </li>
-              <li><a href="contentstrategy.php">Content Creation & Strategy</a></li>
+              <li><a href="contentstrategy">Content Creation & Strategy</a></li>
             </ul>
           </div>
           <div class="col-md-2 col-4 ufs-comp">
             <h3>Company</h3>
             <ul class="list-unstyled links">
-              <li><a href="index.php">Home</a></li>
-              <li><a href="about-us.php">About us</a></li>
-              <li><a href="contact.php">Contact us</a></li>
-              <li><a href="index.php?#testimonials">Testimonials</a></li>
+              <li><a href="index">Home</a></li>
+              <li><a href="about-us">About us</a></li>
+              <li><a href="contact">Contact us</a></li>
+              <li><a href="index?#testimonials">Testimonials</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-12 d-flex justify-content-md-start ps-md-5 ufs-social">
@@ -94,7 +94,7 @@
                     </g>
                   </svg>
                 </a>
-                <a class="card" href="https://www.facebook.com/profile.php?id=61559163674750" target="_blank">
+                <a class="card" href="https://www.facebook.com/profile?id=61559163674750" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" class="facebook"
                     viewBox="0 0 320 512">
                     <path
